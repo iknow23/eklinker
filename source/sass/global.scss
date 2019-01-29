@@ -9,14 +9,17 @@ html {
 }
 
 body {
+  margin: 0;
+  padding: 0;
 //  min-width: 320px;
-//  margin: 0;
 //  
 //  font-size: 14px;
 //  line-height: 20px;
 //  font-family: "Arial", sans-serif;
-//
-//  background-image: url('../img/bg-pattern3.png');
+}
+
+a {
+  text-decoration: none;
 }
 
 img {
