@@ -4,7 +4,7 @@
   background-color: #eeeeee;
 }
 
-.slider-controls {
+.slider__controls {
   position: absolute;
   left: 50%;
   bottom: 104px;
@@ -18,7 +18,7 @@
   transform: translateX(-50%);
 }
 
-.slider-controls label {
+.slider__controls label {
   position: relative;
   
   display: inline-block;
@@ -30,7 +30,7 @@
   cursor: pointer;
 }
 
-.slider-controls label::after {
+.slider__controls label::after {
   content: "";
   
   position: absolute;
@@ -88,9 +88,9 @@
   display: block;
 }
 
-#product-1:checked ~ .slider-controls .slider-controls-item--1::before,
-#product-2:checked ~ .slider-controls .slider-controls-item--2::before,
-#product-3:checked ~ .slider-controls .slider-controls-item--3::before {
+#product-1:checked ~ .slider__controls .slider__controls-item--1::before,
+#product-2:checked ~ .slider__controls .slider__controls-item--2::before,
+#product-3:checked ~ .slider__controls .slider__controls-item--3::before {
   content: "";
   position: absolute;
   left: 17px;
