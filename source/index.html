@@ -335,8 +335,8 @@
           <p class="structure__desc">
             Такой подход к работе позволяет нам гарантировать соответствие продукции ожиданиям покупателей и поддерживать свою репутацию, как надежного поставщика термопанелей на российский рынок.
           </p>
-          <img class="structure__img-zoom" src="" alt="Увеличенное изображение термопанели">
-          <img class="structure__img-main" src="" alt="Основное изображение термопанели">
+          <img class="structure__img-zoom" src="" width="" height="" alt="Увеличенное изображение термопанели">
+          <img class="structure__img-main" src="" width="" height="" alt="Основное изображение термопанели">
         </div>
       </section>
       
@@ -358,7 +358,7 @@
               <a class="services__item-link" href="#">
                 Узнать подробнее
               </a>
-              <img class="services__item-img" src="" alt="Изображение человечка возле дома">
+              <img class="services__item-img" src="" width="" height="" alt="Изображение человечка возле дома">
             </li>
             <li class="services__item">
               <h3 class="services_item-title">
@@ -372,7 +372,7 @@
               <a class="services__item-link" href="#">
                 Узнать подробнее
               </a>
-              <img class="services__item-img" src="" alt="Изображение человечка устанавливающего термопанель">
+              <img class="services__item-img" src="" width="" height="" alt="Изображение человечка устанавливающего термопанель">
             </li>
             <li class="services__item">
               <h3 class="services_item-title">
@@ -388,7 +388,7 @@
               <a class="services__item-link" href="#">
                 Узнать подробнее
               </a>
-              <img class="services__item-img" src="" alt="Изображение человечка, замеряющего размеры дома">
+              <img class="services__item-img" src="" width="" height="" alt="Изображение человечка, замеряющего размеры дома">
             </li>
             <li class="services__item">
               <h3 class="services_item-title">
@@ -402,7 +402,7 @@
               <a class="services__item-link" href="#">
                 Узнать подробнее
               </a>
-              <img class="services__item-img" src="" alt="Изображение человечка, смотрящего на дом через луппу">
+              <img class="services__item-img" src="" width="" height="" alt="Изображение человечка, смотрящего на дом через луппу">
             </li>
           </ul>
         </div>
@@ -415,13 +415,13 @@
           </h2>
           <ul class="card__list-img">
             <li class="card__item-img">
-              <img class="card__img card__img--visa" src="" alt="Эмблема карт visa">
+              <img class="card__img card__img--visa" src="" width="" height="" alt="Эмблема карт visa">
             </li>
             <li class="card__item">
-              <img class="card__img card__img--mastercard" src="" alt="Эмблема карт mastercard">
+              <img class="card__img card__img--mastercard" src="" width="" height="" alt="Эмблема карт mastercard">
             </li>
             <li class="card__item">
-              <img class="card__img card__img--mir" src="" alt="Эмблема карт мир">
+              <img class="card__img card__img--mir" src="" width="" height="" alt="Эмблема карт мир">
             </li>
           </ul>
           <ul class="card__list-features">
@@ -457,13 +457,47 @@
           </div>
           <ul class="about__list">
             <li class="about__item">
-              <img src="img/1.png" alt="">
+              <img class="about__img about__img--first" src="img/1.png" width="" height="" alt="Фото офисного помещения компании E-Klinker">
             </li>
             <li class="about__item">
-              <img src="img/1.png" alt="">
+              <img class="about__img about__img--second" src="img/1.png" width="" height="" alt="Фото офисного помещения компании E-Klinker">
             </li>
             <li class="about__item">
-              <img src="img/1.png" alt="">
+              <img class="about__img about__img--third" src="img/1.png" width="" height="" alt="Фото офисного помещения компании E-Klinker">
+            </li>
+          </ul>
+        </div>
+      </section>
+      
+      <section class="media">
+        <div class="container">
+          <h2 class="media__title">
+            Наше видео объектов
+          </h2>
+          <ul class="media__list">
+            <li class="media__item">
+              <img class="media__preview media__preview--first" width="" height="" src="img/1.png" alt="Превью картинка видео">
+              <h3 class="media__item-title">
+                Название видео
+              </h3>
+            </li>
+            <li class="media__item">
+              <img class="media__preview media__preview--second" width="" height="" src="img/1.png" alt="Превью картинка видео">
+              <h3 class="media__item-title">
+                Название видео
+              </h3>
+            </li>
+            <li class="media__item">
+              <img class="media__preview media__preview--third" width="" height="" src="img/1.png" alt="Превью картинка видео">
+              <h3 class="media__item-title">
+                Название видео
+              </h3>
+            </li>
+            <li class="media__item">
+              <img class="media__preview media__preview--fourth" width="" height="" src="img/1.png" alt="Превью картинка видео">
+              <h3 class="media__item-title">
+                Название видео
+              </h3>
             </li>
           </ul>
         </div>
@@ -492,6 +526,12 @@
         arrows: false,
         dots: true,
         slidesToShow: 1,
+        slidesToScroll: 1
+      });
+      $('.media__list').slick({
+        arrows: false,
+        dots: true,
+        slidesToShow: 2,
         slidesToScroll: 1
       });
     </script>
