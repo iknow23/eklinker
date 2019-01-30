@@ -97,18 +97,21 @@
     </header>
 
     <main class="page-catalog">
+      <h1 class="visually-hidden">Карточка товара</h1>
       <div class="container">
-        <h1 class="visually-hidden">Карточка товара</h1>
         <ul class="breadcrumbs">
 			<li><a href="index.html">Главная</a></li>
 			<li><a href="catalog.html">Каталог</a></li>
 			<li><a href="#">Фасадные термопанели с кликерной плиткой</a></li>
 			<li class="breadcrumbs-current">Фасадная клинкерная термопанель Cerrad, Dakota</li>
 		</ul>
-        
-        <section class="page-catalog card">
+      </div>
+
+      <section class="page-catalog card">
+        <div class="container">
           <h2 class="card__title">Фасадная клинкерная термопанель cerrad, dakota rustico</h2>
           <div class="card__wrapper">
+           
             <div class="card__show-wrapper">
               <img class="card__img" src="" alt="Изображение термопанели">
               <ul class="card__list-preview">
@@ -183,9 +186,50 @@
             </div>
             
           </div>
-        </section>
-        
-      </div>
+        </div>
+      </section>
+      
+      <section class="popular">
+        <div class="container">
+          <h2 class="popular__title">
+            Популярные цвета
+          </h2>
+          <ul class="popular__list">
+            <li class="popular__item">
+              <p class="popular__hit hit">Хит</p>
+              <img class="popular__img" src="img/1.png" width="" height="" alt="Изображение фасадной клинкерной термопанели">
+              <h3 class="popular__item-tile">Фасадная клинкерная термопанель Cerrad, крем Gladka</h3>
+              <p class="popular__price">1001 <b class="price-symbol"><span class="visually-hidden">р</span></b> </p>
+              <button class="popular__button btn">Узнать подробнее</button>
+            </li>
+            <li class="popular__item">
+              <img class="popular__img" src="img/1.png" width="" height="" alt="Изображение фасадной клинкерной термопанели">
+              <h3 class="popular__item-tile">Фасадная клинкерная термопанель Cerrad, крем Gladka</h3>
+              <p class="popular__price">1001 <b class="price-symbol"><span class="visually-hidden">р</span></b> </p>
+              <button class="popular__button btn">Узнать подробнее</button>
+            </li>
+            <li class="popular__item">
+              <img class="popular__img" src="img/1.png" width="" height="" alt="Изображение фасадной клинкерной термопанели">
+              <h3 class="popular__item-tile">Фасадная клинкерная термопанель Cerrad, крем Gladka</h3>
+              <p class="popular__price">1001 <b class="price-symbol"><span class="visually-hidden">р</span></b> </p>
+              <button class="popular__button btn">Узнать подробнее</button>
+            </li>
+            <li class="popular__item">
+              <img class="popular__img" src="img/1.png" width="" height="" alt="Изображение фасадной клинкерной термопанели">
+              <h3 class="popular__item-tile">Фасадная клинкерная термопанель Cerrad, крем Gladka</h3>
+              <p class="popular__price">1001 <b class="price-symbol"><span class="visually-hidden">р</span></b> </p>
+              <button class="popular__button btn">Узнать подробнее</button>
+            </li>
+            <li class="popular__item">
+              <img class="popular__img" src="img/1.png" width="" height="" alt="Изображение фасадной клинкерной термопанели">
+              <h3 class="popular__item-tile">Фасадная клинкерная термопанель Cerrad, крем Gladka</h3>
+              <p class="popular__price">1001 <b class="price-symbol"><span class="visually-hidden">р</span></b> </p>
+              <button class="popular__button btn">Узнать подробнее</button>
+            </li>
+          </ul>
+        </div>
+      </section>
+
     </main>
 
     <footer class="page-footer">
@@ -326,6 +370,12 @@
     <script src="slick/slick.js"></script>
     <script>
       $('.card__list-preview').slick({
+        arrows: false,
+        dots: true,
+        slidesToShow: 3,
+        slidesToScroll: 1
+      });
+      $('.popular__list').slick({
         arrows: false,
         dots: true,
         slidesToShow: 3,
