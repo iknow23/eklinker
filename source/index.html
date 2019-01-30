@@ -488,7 +488,12 @@
     <script src="js/picturefill.min.js"></script>
     <script src="slick/slick.js"></script>
     <script>
-      $('.about__list').slick();
+      $('.about__list').slick({
+        arrows: false,
+        dots: true,
+        slidesToShow: 1,
+        slidesToScroll: 1
+      });
     </script>
 
   </body>
