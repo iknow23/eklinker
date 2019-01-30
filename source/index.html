@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <!-- Slick Slider -->
     <link rel="stylesheet" href="slick/slick-theme.css">
+    <link rel="stylesheet" href="slick/slick.css">
     
     <!-- Main styles -->
     <link rel="stylesheet" href="css/style.min.css">
@@ -454,6 +455,17 @@
               Сроки производства термопанелей менее двух недель
             </p>
           </div>
+          <ul class="about__list">
+            <li class="about__item">
+              <img src="img/1.png" alt="">
+            </li>
+            <li class="about__item">
+              <img src="img/1.png" alt="">
+            </li>
+            <li class="about__item">
+              <img src="img/1.png" alt="">
+            </li>
+          </ul>
         </div>
       </section>
     </main>
@@ -471,8 +483,13 @@
       
       
       
-    <script src="js/script.js"></script>
+<!--    <script src="js/script.js"></script>-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="js/picturefill.min.js"></script>
+    <script src="slick/slick.js"></script>
+    <script>
+      $('.about__list').slick();
+    </script>
 
   </body>
 </html>
