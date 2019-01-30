@@ -94,7 +94,8 @@
           </nav>
         </div>
       </section>
-      
+    </header>
+
     <main class="page-catalog">
       <div class="container">
         <h1 class="visually-hidden">Карточка товара</h1>
@@ -107,7 +108,81 @@
         
         <section class="page-catalog card">
           <h2 class="card__title">Фасадная клинкерная термопанель cerrad, dakota rustico</h2>
-          
+          <div class="card__wrapper">
+            <div class="card__show-wrapper">
+              <img class="card__img" src="" alt="Изображение термопанели">
+              <ul class="card__list-preview">
+                <li class="card__item-preview">
+                  <img class="card__img-preview" src="img/1.png" width="" height="" alt="">
+                </li>
+                <li class="card__item-preview">
+                  <img class="card__img-preview" src="img/1.png" width="" height="" alt="">
+                </li>
+                <li class="card__item-preview">
+                  <img class="card__img-preview" src="img/1.png" width="" height="" alt="">
+                </li>
+              </ul>
+            </div>
+            
+            <div class="card__pay-wrapper">
+              <div class="card__price">
+                <p class="card__price-title">Цена</p>
+                <span class="card__price">2 735.40</span>
+              </div>
+              <div class="card__count">
+                <p class="card__count-title">Количество</p>
+              </div>
+              <button class="card__button btn">Купить в один клик</button>
+            </div>
+            
+            <div class="card__desc-wrapper">
+              <table class="card__table" border="1" width="100%" cellpadding="5">
+                <tr>
+                  <th>Толщина</th>
+                  <td>40 мм.</td>
+                </tr>
+                <tr>
+                  <th>Страна изготовления</th>
+                  <td>Россия</td>
+                </tr>
+                <tr>
+                  <th>Производитель</th>
+                  <td>Польша</td>
+                </tr>
+                <tr>
+                  <th>Соединение термопанелей</th>
+                  <td>Шип - паз</td>
+                </tr>
+                <tr>
+                  <th>Монтажные втулки</th>
+                  <td>Количество 6 шт.</td>
+                </tr>
+                <tr>
+                  <th>Утеплитель</th>
+                  <td>ЭППС - Пеноплекс</td>
+                </tr>
+                <tr>
+                  <th>Полезная площадь</th>
+                  <td>0,55 м2</td>
+                </tr>
+                <tr>
+                  <th>Размер</th>
+                  <td>1,15 x 0,54 см.</td>
+                </tr>
+                <tr>
+                  <th>Вес</th>
+                  <td>9,5 кг./панель</td>
+                </tr>
+                <tr>
+                  <th>Описание</th>
+                </tr>
+                <tr>
+                  <td>Фасадная клинкерная термопанель Cerrad, Loft brick Chilli применяется для облицовки фасадов зданий, проведение восстановительных и ремонтных фасадных работ, утепление наружных стен дома. Технические характеристики: Фасадная клинкерная термопанель Cerrad, Loft brick Chilli крепится к основанию дюбелями, а швы между ними затираются затиркой. В результате визуально фасад дома не отличим от кирпичной кладки.</td>
+                </tr>
+              </table>
+            </div>
+            
+          </div>
         </section>
         
       </div>
@@ -249,22 +324,14 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="js/picturefill.min.js"></script>
     <script src="slick/slick.js"></script>
-<!--
     <script>
-      $('.about__list').slick({
+      $('.card__list-preview').slick({
         arrows: false,
         dots: true,
-        slidesToShow: 1,
-        slidesToScroll: 1
-      });
-      $('.media__list').slick({
-        arrows: false,
-        dots: true,
-        slidesToShow: 2,
+        slidesToShow: 3,
         slidesToScroll: 1
       });
     </script>
--->
 
   </body>
 </html>
