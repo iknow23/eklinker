@@ -1,0 +1,83 @@
+.about {
+  position: relative;
+  padding-bottom: 195px;
+  background-image: url('../img/bg-about.jpg');
+  background-repeat: no-repeat;
+}
+
+.about__title {
+  margin-bottom: 70px;
+  color: $white;
+}
+
+.about__desc-top,
+.about__desc-bottom {
+  width: 740px;
+  padding: 40px 75px 40px 100px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 22px;
+  background-color: $white;
+  border-radius: 5px;
+}
+
+.about__desc-top {
+  margin-bottom: 30px;
+}
+
+.about__desc {
+  position: relative;
+}
+
+.about__desc::before {
+  content: '';
+  
+  position: absolute;
+  left: -50px;
+  top: 3px;
+
+  display: block;
+  width: 28px;
+  height: 28px;
+  
+  background-repeat: no-repeat;
+}
+
+.about__desc--like::before {
+  background-image: url('../../img/about-like.png');
+}
+
+.about__desc--quality::before {
+  background-image: url('../../img/about-quality.png');
+}
+
+.about__desc--world::before {
+  background-image: url('../../img/about-world.png');
+}
+
+.about__desc--time::before {
+  background-image: url('../../img/about-time.png');
+}
+
+.about__list {
+  position: absolute;
+  top: 240px;
+  right: 220px;
+
+  width: 470px;
+  padding: 5px;
+  background-color: #ffa200;
+}
+
+.about__item {
+  width: 460px;
+  height: 340px;
+}
+
+//@media (min-width: $tablet-width) {
+
+//}
+
+//@media (min-width: $desktop-width) {
+
+//}
