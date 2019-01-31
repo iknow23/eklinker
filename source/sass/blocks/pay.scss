@@ -1,4 +1,82 @@
+.pay {
+  display: flex;
+  padding-top: 25px;
+  padding-bottom: 100px;
+  background-image: url('../img/bg-pay.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: -115px;
+}
 
+.pay .container {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.pay__wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-right: 50px;
+}
+
+.pay__title {
+  width: 550px;
+  margin: 0;
+  margin-bottom: 20px;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.pay__list-img,
+.pay__list-features {
+  @include reset-list;
+}
+
+.pay__list-img {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.pay__item-img:not(:last-of-type) {
+  margin-right: 30px;
+}
+
+.pay__footer {
+  width: 350px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.pay__item-features {
+  position: relative;
+  font-size: 18px;
+  font-weight: 400;
+  color: rgba(31, 15, 34, 0.8);
+}
+
+.pay__item-features::before {
+  content: '';
+  
+  position: absolute;
+  left: -25px;
+  top: 3px;
+  
+  width: 17px;
+  height: 16px;
+  
+  background-image: url('../img/checkmark.png');
+  background-repeat: no-repeat;
+}
+
+.pay__button {
+  background-color: $main-color;
+  border: none;
+}
 
 //@media (min-width: $tablet-width) {
 
