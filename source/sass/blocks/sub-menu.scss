@@ -2,6 +2,11 @@
   width: 255px;
 }
 
+.sub-menu--catalog-inner,
+.sub-menu--install--inner {
+  box-shadow: 0 5px 7px 1px rgba(0, 0, 0, 0.35);
+}
+
 .sub-menu--install {
   width: 155px;
 }
