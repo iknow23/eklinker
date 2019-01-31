@@ -72,6 +72,10 @@
 .about__item {
   width: 460px;
   height: 340px;
+  
+  :hover {
+    cursor: pointer;
+  }
 }
 
 //@media (min-width: $tablet-width) {
