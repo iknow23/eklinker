@@ -1,9 +1,10 @@
 .related-product {
   position: relative;
-  min-height: 700px;
+  min-height: 750px;
   background-image: url('../img/bg-related.jpg');
   background-repeat: no-repeat;
-  background-position: bottom center;
+  background-position: 0 300px;
+  border-bottom: 1px solid $white;
 }
 
 .related-product__title {
