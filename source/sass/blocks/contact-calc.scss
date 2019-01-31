@@ -1,0 +1,29 @@
+.contact-calc {
+  display: flex;
+  justify-content: space-between;
+}
+
+.contact-calc__wrapper,
+.contact-calc__group--textarea {
+  width: 370px;
+}
+
+.contact-calc__input {
+  width: 100%;
+  margin-bottom: 12px;
+  padding: 12px 32px;
+  border-radius: 19px;
+  border: none;
+}
+
+textarea.contact-calc__input {
+  min-height: 150px;
+  margin-bottom: 0;
+}
+
+//.contact__group-wrapper {
+//  width: 370px;
+//  display: flex;
+//  flex-direction: column;
+//  justify-content: space-between;
+//}

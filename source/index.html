@@ -338,23 +338,25 @@
                 </div>
               </div>
             </fieldset>
-            <fieldset class="calculator__field contact">
-              <div class="contact__group">
-                <label class="visually-hidden contact__label" for="first-name">Ваше имя</label>
-                <input class="contact__input" type="text" id="first-name" placeholder="Ваше имя*">
+            <div class="calculator__field contact-calc">
+              <div class="contact-calc__wrapper">
+                <div class="contact-calc__group">
+                  <label class="visually-hidden contact-calc__label" for="first-name">Ваше имя</label>
+                  <input class="contact-calc__input" type="text" id="first-name" placeholder="Ваше имя*">
+                </div>
+                <div class="contact-calc__group">
+                  <label class="visually-hidden contact-calc__label" for="tel">Ваш телефон</label>
+                  <input class="contact-calc__input" type="tel" id="tel" placeholder="Ваш телефон*">
+                </div>
+                <div class="contact-calc__group">
+                  <label class="visually-hidden contact-calc__label" for="mail">Ваш E-mail</label>
+                  <input class="contact-calc__input" type="email" id="mail" placeholder="Ваш E-mail">
+                </div>
               </div>
-              <div class="contact__group">
-                <label class="visually-hidden contact__label" for="tel">Ваш телефон</label>
-                <input class="contact__input" type="tel" id="tel" placeholder="Ваш телефон*">
+              <div class="contact-calc__group contact-calc__group--textarea">
+                <textarea class="contact-calc__input" name="comment" cols="30" rows="10" placeholder="Комментарий"></textarea>
               </div>
-              <div class="contact__group">
-                <label class="visually-hidden contact__label" for="mail">Ваш E-mail</label>
-                <input class="contact__input" type="email" id="mail" placeholder="Ваш E-mail">
-              </div>
-              <div class="contact__group">
-                <textarea class="contact__input" name="comment" cols="30" rows="10" placeholder="Комментарий"></textarea>
-              </div>
-            </fieldset>
+            </div>
             <div class="calculator__footer">
               <button class="calculator__button btn" type="submit">Получить расчёт!</button>
               <span class="calculate__desc">
