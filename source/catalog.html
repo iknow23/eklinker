@@ -20,30 +20,32 @@
     <header class="page-header">
       <section class="header-top">
         <div class="container">
-          <a class="header-top__logo logo">
-            <img class="logo__img" src="img/logo.png" width="148" height="69" alt="Логотип E-Klinker">
-          </a>
-          <div class="header-top__contact">
-            <div class="header-top__time">
-              Пн-Вс 08:00-21:00
+          <div class="header-top__wrapper">
+            <a class="header-top__logo logo" href="index.html">
+              <img class="logo__img" src="img/logo.png" width="148" height="69" alt="Логотип E-Klinker">
+            </a>
+            <div class="header-top__contact">
+              <div class="header-top__time">
+                Пн-Вс 08:00-21:00
+              </div>
+              <div class="header-top__mail">
+                evklinker@gmail.com
+              </div>
             </div>
-            <div class="header-top__mail">
-              evklinker@gmail.com
+            <div class="header-top__area-list area">
+              <p class="area__title">Выберите регион:</p>
+              <ul class="area__list">
+                <li class="area__item">Москва</li>
+                <li class="area__item">Ростов-на-Дону</li>
+                <li class="area__item">Тула</li>
+                <li class="area__item">Рязань</li>
+              </ul>
+              <p class="area__number">8(495)324-00-04</p>
             </div>
+            <button class="header-top__basket">
+              <span class="visually-hidden">Корзина</span>
+            </button>
           </div>
-          <div class="header-top__area-list area">
-            <p class="area__title">Выберите регион:</p>
-            <ul class="area__list">
-              <li class="area__item">Москва</li>
-              <li class="area__item">Ростов-на-Дону</li>
-              <li class="area__item">Тула</li>
-              <li class="area__item">Рязань</li>
-            </ul>
-            <p class="area__number">8(495)324-00-04</p>
-          </div>
-          <button class="header-top__basket">
-            <span class="visually-hidden">Корзина</span>
-          </button>
         </div>
       </section>
       
@@ -51,8 +53,8 @@
         <div class="container">
           <nav class="header-bottom__navigation main-nav">
             <ul class="main-nav__list">
-              <li class="main-nav__item main-nav__item--current">
-                <a href="index.html" class="main-nav__link">Главная</a>
+              <li class="main-nav__item">
+                <a class="main-nav__link">Главная</a>
               </li>
               <li class="main-nav__item">
                 <a class="main-nav__link" href="#">О компании</a>
@@ -69,26 +71,26 @@
               <li class="main-nav__item">
                 <a class="main-nav__link" href="#">Наши объекты</a>
               </li>
-              <li class="main-nav__item">
-                <a class="main-nav__link" href="catalog.html">Каталог</a>
-                <ul class="main-nav__sub-menu">
-                  <li class="sub-menu__item"><a href="#">Фасадные термопанели с клинкерной плиткой</a></li>
-                  <li class="sub-menu__item"><a href="#">Фасадные термопанели под состаренный кирпич</a></li>
-                  <li class="sub-menu__item"><a href="#">Термопанели для отделки цоколя</a></li>
-                  <li class="sub-menu__item"><a href="#">Затирка для термопанелей Premium</a></li>
-                  <li class="sub-menu__item"><a href="#">Фасадный декор</a></li>
-                  <li class="sub-menu__item"><a href="#">Клинкерные ступени</a></li>
-                  <li class="sub-menu__item"><a href="#">Сопутствующие товары</a></li>
+              <li class="main-nav__item main-nav__item--sub">
+                <a class="main-nav__link main-nav__link--current" href="catalog.html">Каталог</a>
+                <ul class="main-nav__sub-menu sub-menu sub-menu--catalog">
+                  <li class="sub-menu__item"><a class="sub-menu__link" href="#">Фасадные термопанели с клинкерной плиткой</a></li>
+                  <li class="sub-menu__item"><a class="sub-menu__link" href="#">Фасадные термопанели под состаренный кирпич</a></li>
+                  <li class="sub-menu__item"><a class="sub-menu__link" href="#">Термопанели для отделки цоколя</a></li>
+                  <li class="sub-menu__item"><a class="sub-menu__link" href="#">Затирка для термопанелей Premium</a></li>
+                  <li class="sub-menu__item"><a class="sub-menu__link" href="#">Фасадный декор</a></li>
+                  <li class="sub-menu__item"><a class="sub-menu__link" href="#">Клинкерные ступени</a></li>
+                  <li class="sub-menu__item"><a class="sub-menu__link" href="#">Сопутствующие товары</a></li>
                 </ul>
               </li>
-              <li class="main-nav__item">
+              <li class="main-nav__item main-nav__item--sub">
                 <a class="main-nav__link" href="#">Монтаж</a>
-                <ul class="main-nav__sub-menu">
-                  <li class="sub-menu__item"><a href="#">Шеф монтаж</a></li>
-                  <li class="sub-menu__item"><a href="#">Стоимость монтажа</a></li>
+                <ul class="main-nav__sub-menu sub-menu--install">
+                  <li class="sub-menu__item"><a class="sub-menu__link" href="#">Шеф монтаж</a></li>
+                  <li class="sub-menu__item"><a class="sub-menu__link" href="#">Стоимость монтажа</a></li>
                 </ul>
               </li>
-              <li class="main-nav__item">
+              <li class="main-nav__item main-nav__item--sub">
                 <a class="main-nav__link" href="#">Где купить?</a>
               </li>
               <li class="main-nav__item">
@@ -98,16 +100,15 @@
           </nav>
         </div>
       </section>
-    </header>
 
     <main class="page-catalog">
       <h1 class="visually-hidden">Карточка товара</h1>
       <div class="container">
         <ul class="breadcrumbs">
-			<li><a href="index.html">Главная</a></li>
-			<li><a href="catalog.html">Каталог</a></li>
-			<li><a href="#">Фасадные термопанели с кликерной плиткой</a></li>
-			<li class="breadcrumbs-current">Фасадная клинкерная термопанель Cerrad, Dakota</li>
+			<li><a href="index.html">Главная/</a></li>
+			<li><a href="catalog.html">Каталог/</a></li>
+			<li><a href="#">Фасадные термопанели с кликерной плиткой/</a></li>
+			<li class="breadcrumbs-current"><a>Фасадная клинкерная термопанель Cerrad, Dakota</a></li>
 		</ul>
       </div>
 
@@ -242,61 +243,69 @@
           <p class="calculator__desc">
             Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали
           </p>
-          <img class="calculator__img" src="" width="" height="" alt="Изображение термопанели">
+          <img class="calculator__img" src="img/calculator-card.png" width="264" height="161" alt="Изображение термопанели">
           <form class="calculator__form" action="" method="post">
             <fieldset class="calculator__field type">
-              <legend class="type__title">1. Выберите тип термопанели:</legend>
+              <legend class="calculator__legend type__title">1. Выберите тип термопанели:</legend>
               <div class="type__group">
-                <label class="color__label" for="front">Фасадные</label>
+                <label class="calculator__label color__label" for="front">Фасадные</label>
                 <input class="visually-hidden type__input" type="checkbox" id="front" name="front" value="front" checked="">
               </div>
               <div class="type__group">
-                <label class="color__label" for="basement">Цокольные</label>
+                <label class="calculator__label color__label" for="basement">Цокольные</label>
                 <input class="visually-hidden type__input" type="checkbox" id="basement" name="basement" value="basement">
               </div>
             </fieldset>
             <fieldset class="calculator__field color">
-              <legend class="color__title">2. выберите цвет термопанели:</legend>
-              <label for="bg">Цвет</label>
+              <legend class="calculator__legend color__title">2. Выберите цвет термопанели:</legend>
+              <label class="calculator__label" for="bg">Цвет</label>
               <input type="color" name="bg" id="bg" value="#ffcc00">
             </fieldset>
             <fieldset class="calculator__field size">
-              <legend class="size__title">3. Площадь фасада</legend>
-              <div class="size__group">
-                <label class="size__label" for="have-size">Заполните, если знаете квадратуру дома:</label>
-                <input class="size__input" type="text" id="have-size" placeholder="м2">
-              </div>
-              <div class="size__group">
-                <label class="size__label">Или введите параметры дома:</label>
-                <label class="size__label" for="length">длина:</label>
-                <input class="size__input" type="text" id="length" placeholder="м">
-                <label class="size__label" for="width">ширина:</label>
-                <input class="size__input" type="text" id="width" placeholder="м">
-                <label class="size__label" for="height">длина:</label>
-                <input class="size__input" type="text" id="height" placeholder="м">
-              </div>
-            </fieldset>
-            <fieldset class="contact__field name">
-              <div class="contact__group">
-                <label class="visually-hidden contact__label" for="first-name">Ваше имя</label>
-                <input class="contact__input" type="text" id="first-name" placeholder="Ваше имя*">
-              </div>
-              <div class="contact__group">
-                <label class="visually-hidden contact__label" for="tel">Ваш телефон</label>
-                <input class="contact__input" type="tel" id="tel" placeholder="Ваш телефон*">
-              </div>
-              <div class="contact__group">
-                <label class="visually-hidden contact__label" for="mail">Ваш E-mail</label>
-                <input class="contact__input" type="email" id="mail" placeholder="Ваш E-mail">
-              </div>
-              <div class="contact__group">
-                <textarea class="contact__input" name="comment" cols="30" rows="10" placeholder="Комментарий"></textarea>
+              <legend class="calculator__legend size__title">3. Площадь фасада</legend>
+              <div class="size__group--wrapper">
+                <div class="size__group">
+                  <label class="size__label" for="have-size">Заполните, если знаете квадратуру дома:</label>
+                  <input class="size__input" type="text" id="have-size" placeholder="м2">
+                </div>
+                <div class="size__group">
+                  <label class="size__label">Или введите параметры дома:</label>
+                  <div class="size__group-wrapper">
+                    <label for="length">длина:</label>
+                    <input class="size__input" type="text" id="length" placeholder="   м">
+                    <label for="width">ширина:</label>
+                    <input class="size__input" type="text" id="width" placeholder="   м">
+                    <label for="height">длина:</label>
+                    <input class="size__input" type="text" id="height" placeholder="   м">
+                  </div>
+                </div>
               </div>
             </fieldset>
-            <button class="calculator__button btn" type="submit">Получить расчёт!</button>
-            <span class="calculate__desc">
-              *Поля, отмеченные звёздочкой, обязательны для заполнения. Мы гарантируем, что все данные, указанные вформе заявки останутся конфиденциальными
-            </span>
+            <div class="calculator__field contact-calc">
+              <div class="contact-calc__wrapper">
+                <div class="contact-calc__group">
+                  <label class="visually-hidden contact-calc__label" for="first-name">Ваше имя</label>
+                  <input class="contact-calc__input" type="text" id="first-name" placeholder="Ваше имя*">
+                </div>
+                <div class="contact-calc__group">
+                  <label class="visually-hidden contact-calc__label" for="tel">Ваш телефон</label>
+                  <input class="contact-calc__input" type="tel" id="tel" placeholder="Ваш телефон*">
+                </div>
+                <div class="contact-calc__group">
+                  <label class="visually-hidden contact-calc__label" for="mail">Ваш E-mail</label>
+                  <input class="contact-calc__input" type="email" id="mail" placeholder="Ваш E-mail">
+                </div>
+              </div>
+              <div class="contact-calc__group contact-calc__group--textarea">
+                <textarea class="contact-calc__input" name="comment" cols="30" rows="10" placeholder="Комментарий"></textarea>
+              </div>
+            </div>
+            <div class="calculator__footer">
+              <button class="calculator__button btn" type="submit">Получить расчёт!</button>
+              <span class="calculate__desc">
+                *Поля, отмеченные звёздочкой, обязательны для заполнения. Мы гарантируем, что все данные, указанные в форме заявки останутся конфиденциальными
+              </span>
+            </div>
           </form>
         </div>
       </section>
@@ -304,125 +313,127 @@
 
     <footer class="page-footer">
       <div class="container">
-        <div class="page-footer__socials socials">
-          <a class="socials__logo logo">
-            <img class="logo__img" src="img/" width="" height="" alt="Логотип E-Klinker">
-          </a>
-          <p class="socials__title">
-            Мы в соц. сетях:
-          </p>
-          <ul class="socials__list">
-            <li class="socials__item">
-              <a href="" class="socials__item-link" aria-label="Переход на аккаунт компании в Фейсбук">
-                <img class="socials__img" src="img/facebook.png" alt="Логотип Фейсбук">
-              </a>
-            </li>
-            <li class="socials__item">
-              <a href="" class="socials__item-link" aria-label="Переход на аккаунт компании в Вконтакте">
-                <img class="socials__img" src="img/vk.png" alt="Логотип Вконтакте">
-              </a>
-            </li>
-            <li class="socials__item">
-              <a href="" class="socials__item-link" aria-label="Переход на аккаунт компании в Инстаграм">
-                <img class="socials__img" src="img/instagram.png" alt="Логотип Инстаграм">
-              </a>
-            </li>
-            <li class="socials__item">
-              <a href="" class="socials__item-link" aria-label="Переход на аккаунт компании в Твиттер">
-                <img class="socials__img" src="img/twitter.png" alt="Логотип Твиттер">
-              </a>
-            </li>
-          </ul>
-        </div>
-        <div class="page-footer__nav">
-          <p class="page-footer__nav-title">
-            Навигация
-          </p>
-          <ul class="page-footer__nav-list">
-            <li class="page-footer__nav-item">
-              <a class="page-footer__nav__link">Главная</a>
-            </li>
-            <li class="page-footer__nav-item">
-              <a class="page-footer__nav__link" href="#">О компании</a>
-            </li>
-            <li class="page-footer__nav-item">
-              <a class="page-footer__nav__link" href="#">Новости</a>
-            </li>
-            <li class="page-footer__nav-item">
-              <a class="page-footer__nav__link" href="#">О термопанелях</a>
-            </li>
-            <li class="page-footer__nav-item">
-              <a class="page-footer__nav__link" href="#">Акции</a>
-            </li>
-            <li class="page-footer__nav-item">
-              <a class="page-footer__nav__link" href="#">Наши объекты</a>
-            </li>
-            <li class="page-footer__nav-item page-footer__nav-item--current">
-              <a class="page-footer__nav__link" href="catalog.html">Каталог</a>
-            </li>
-            <li class="page-footer__nav-item">
-              <a class="page-footer__nav__link" href="#">Монтаж</a>
-            </li>
-            <li class="page-footer__nav-item">
-              <a class="page-footer__nav__link" href="#">Где купить?</a>
-            </li>
-            <li class="page-footer__nav-item">
-              <a class="page-footer__nav__link" href="contacts.html">Контакты</a>
-            </li>
-          </ul>
-        </div>
-        <div class="page-footer__nav">
-          <p class="page-footer__nav-title">
-            Каталог
-          </p>
-          <ul class="page-footer__nav-list">
-            <li class="page-footer__nav-item">
-              <a class="page-footer__nav__link">Фасадные термопанели с клинкерной плиткой</a>
-            </li>
-            <li class="page-footer__nav-item">
-              <a class="page-footer__nav__link" href="#">Фасадные термопанели под состаренный кирпич</a>
-            </li>
-            <li class="page-footer__nav-item">
-              <a class="page-footer__nav__link" href="#">Термопанели для отделки цоколя</a>
-            </li>
-            <li class="page-footer__nav-item">
-              <a class="page-footer__nav__link" href="#">Затирка для термопанелей PREMIUM</a>
-            </li>
-          </ul>
-        </div>
-        <div class="page-footer__contacts contacts">
-          <p class="contacts__title">
-            Контакты
-          </p>
-          <p class="contacts__desc">
-            Пн-Вс 08:00-21:00 *для всех регионов
-          </p>
-          <ul class="contacts__list">
-            <li class="contacts__item">
-              <p class="contacts__item-title">Москва</p>
-              <span class="contacts__number">8(495)324-00-04</span>
-            </li>
-            <li class="contacts__item">
-              <p class="contacts__item-title">Тула</p>
-              <span class="contacts__number">8(495)324-00-04</span>
-            </li>
-            <li class="contacts__item">
-              <p class="contacts__item-title">Ростов-на-Дону</p>
-              <span class="contacts__number">8(863)310-01-02</span>
-            </li>
-            <li class="contacts__item">
-              <p class="contacts__item-title">Рязань</p>
-              <span class="contacts__number">8(495)324-00-04</span>
-            </li>
-            <li class="contacts__item">
-              <p class="contacts__item-title">Волгоград</p>
-              <span class="contacts__number">8(800)000-00-00</span>
-            </li>
-            <li class="contacts__item">
-              <p class="contacts__item-title">Липецк</p>
-              <span class="contacts__number">8(800)000-00-00</span>
-            </li>
-          </ul>
+        <div class="page-footer__wrapper">
+          <div class="page-footer__socials socials">
+            <a class="socials__logo logo" href="index.html">
+              <img class="logo__img" src="img/logo.png" width="148" height="69" alt="Логотип E-Klinker">
+            </a>
+            <p class="socials__title page-footer__title">
+              Мы в соц. сетях:
+            </p>
+            <ul class="socials__list">
+              <li class="socials__item">
+                <a href="" class="socials__item-link" aria-label="Переход на аккаунт компании в Фейсбук">
+                  <img class="socials__img" src="img/facebook.png" alt="Логотип Фейсбук">
+                </a>
+              </li>
+              <li class="socials__item">
+                <a href="" class="socials__item-link" aria-label="Переход на аккаунт компании в Вконтакте">
+                  <img class="socials__img" src="img/vk.png" alt="Логотип Вконтакте">
+                </a>
+              </li>
+              <li class="socials__item">
+                <a href="" class="socials__item-link" aria-label="Переход на аккаунт компании в Инстаграм">
+                  <img class="socials__img" src="img/instagram.png" alt="Логотип Инстаграм">
+                </a>
+              </li>
+              <li class="socials__item">
+                <a href="" class="socials__item-link" aria-label="Переход на аккаунт компании в Твиттер">
+                  <img class="socials__img" src="img/twitter.png" alt="Логотип Твиттер">
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="page-footer__nav">
+            <p class="page-footer__nav-title page-footer__title">
+              Навигация
+            </p>
+            <ul class="page-footer__nav-list">
+              <li class="page-footer__nav-itemt">
+                <a class="page-footer__nav-link page-footer__nav-link--current">Главная</a>
+              </li>
+              <li class="page-footer__nav-item">
+                <a class="page-footer__nav-link" href="#">О компании</a>
+              </li>
+              <li class="page-footer__nav-item">
+                <a class="page-footer__nav-link" href="#">Новости</a>
+              </li>
+              <li class="page-footer__nav-item">
+                <a class="page-footer__nav-link" href="#">О термопанелях</a>
+              </li>
+              <li class="page-footer__nav-item">
+                <a class="page-footer__nav-link" href="#">Акции</a>
+              </li>
+              <li class="page-footer__nav-item">
+                <a class="page-footer__nav-link" href="#">Наши объекты</a>
+              </li>
+              <li class="page-footer__nav-item">
+                <a class="page-footer__nav-link" href="catalog.html">Каталог</a>
+              </li>
+              <li class="page-footer__nav-item">
+                <a class="page-footer__nav-link" href="#">Монтаж</a>
+              </li>
+              <li class="page-footer__nav-item">
+                <a class="page-footer__nav-link" href="#">Где купить?</a>
+              </li>
+              <li class="page-footer__nav-item">
+                <a class="page-footer__nav-link" href="contacts.html">Контакты</a>
+              </li>
+            </ul>
+          </div>
+          <div class="page-footer__nav page-footer__nav--catalog">
+            <p class="page-footer__nav-title page-footer__title">
+              Каталог
+            </p>
+            <ul class="page-footer__nav-list">
+              <li class="page-footer__nav-item">
+                <a class="page-footer__nav-link" href="#">Фасадные термопанели с клинкерной плиткой</a>
+              </li>
+              <li class="page-footer__nav-item">
+                <a class="page-footer__nav-link" href="#">Фасадные термопанели под состаренный кирпич</a>
+              </li>
+              <li class="page-footer__nav-item">
+                <a class="page-footer__nav-link" href="#">Термопанели для отделки цоколя</a>
+              </li>
+              <li class="page-footer__nav-item">
+                <a class="page-footer__nav-link" href="#">Затирка для термопанелей PREMIUM</a>
+              </li>
+            </ul>
+          </div>
+          <div class="page-footer__contacts contacts">
+            <p class="contacts__title page-footer__title">
+              Контакты
+            </p>
+            <p class="contacts__desc">
+              Пн-Вс 08:00-21:00 *для всех регионов
+            </p>
+            <ul class="contacts__list">
+              <li class="contacts__item">
+                <p class="contacts__item-title">Москва</p>
+                <span class="contacts__number">8(495)324-00-04</span>
+              </li>
+              <li class="contacts__item">
+                <p class="contacts__item-title">Тула</p>
+                <span class="contacts__number">8(495)324-00-04</span>
+              </li>
+              <li class="contacts__item">
+                <p class="contacts__item-title">Ростов-на-Дону</p>
+                <span class="contacts__number">8(863)310-01-02</span>
+              </li>
+              <li class="contacts__item">
+                <p class="contacts__item-title">Рязань</p>
+                <span class="contacts__number">8(495)324-00-04</span>
+              </li>
+              <li class="contacts__item">
+                <p class="contacts__item-title">Волгоград</p>
+                <span class="contacts__number">8(800)000-00-00</span>
+              </li>
+              <li class="contacts__item">
+                <p class="contacts__item-title">Липецк</p>
+                <span class="contacts__number">8(800)000-00-00</span>
+              </li>
+            </ul>
+          </div>
         </div>
         <div class="page-footer__copyright copyright">
           <p class="copyright__email">
