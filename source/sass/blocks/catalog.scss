@@ -1,6 +1,7 @@
 .catalog {
   position: relative;
   min-height: 490px;
+  margin-bottom: 250px;
   background-image: url('../img/bg-catalog.jpg');
   background-repeat: no-repeat;
   background-position: top center;
@@ -22,10 +23,43 @@
 
 .catalog__item {
   width: 370px;
+  background-color: $white;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  box-shadow: 0px 15px 25px 5px rgba(0, 0, 0, 0.3);
+}
+
+.catalog__desc-block {
+  padding: 35px 30px;
 }
 
 .catalog__item-tile {
-  
+  margin: 0;
+  margin-bottom: 10px;
+  font-size: 19px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.catalog__desc {
+  margin: 0;
+  margin-bottom: 25px;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.catalog__price {
+  margin: 0;
+  margin-bottom: 15px;
+  font-size: 27px;
+  font-weight: 700;
+  color: #ffa200;
+}
+
+.catalog__button {
+  background-color: $main-color;
+  color: $black;
+  border: none;
 }
 
 //@media (min-width: $tablet-width) {
