@@ -4,6 +4,10 @@
     <meta charset="utf-8">
     <title>eKlinker: Главная</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
+    
+    <!-- Fonts Ubuntu -->
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700" rel="stylesheet">
+    
     <!-- Slick Slider -->
     <link rel="stylesheet" href="slick/slick-theme.css">
     <link rel="stylesheet" href="slick/slick.css">
@@ -16,30 +20,32 @@
     <header class="page-header">
       <section class="header-top">
         <div class="container">
-          <a class="header-top__logo logo">
-            <img class="logo__img" src="img/" width="" height="" alt="Логотип E-Klinker">
-          </a>
-          <div class="header-top__contact">
-            <div class="header-top__time">
-              Пн-Вс 08:00-21:00
+          <div class="header-top__wrapper">
+            <a class="header-top__logo logo">
+              <img class="logo__img" src="img/logo.png" width="148" height="69" alt="Логотип E-Klinker">
+            </a>
+            <div class="header-top__contact">
+              <div class="header-top__time">
+                Пн-Вс 08:00-21:00
+              </div>
+              <div class="header-top__mail">
+                evklinker@gmail.com
+              </div>
             </div>
-            <div class="header-top__mail">
-              evklinker@gmail.com
+            <div class="header-top__area-list area">
+              <p class="area__title">Выберите регион:</p>
+              <ul class="area__list">
+                <li class="area__item">Москва</li>
+                <li class="area__item">Ростов-на-Дону</li>
+                <li class="area__item">Тула</li>
+                <li class="area__item">Рязань</li>
+              </ul>
+              <p class="area__number">8(495)324-00-04</p>
             </div>
+            <button class="header-top__basket">
+              <span class="visually-hidden">Корзина</span>
+            </button>
           </div>
-          <div class="header-top__area-list area">
-            <p class="area__title">Выберите регион:</p>
-            <ul class="area__list">
-              <li class="area__item">Москва</li>
-              <li class="area__item">Ростов-на-Дону</li>
-              <li class="area__item">Тула</li>
-              <li class="area__item">Рязань</li>
-            </ul>
-            <p class="area__number">8(495)324-00-04</p>
-          </div>
-          <button class="header-top__basket">
-            <span class="visually-hidden">Корзина</span>
-          </button>
         </div>
       </section>
       
@@ -47,8 +53,8 @@
         <div class="container">
           <nav class="header-bottom__navigation main-nav">
             <ul class="main-nav__list">
-              <li class="main-nav__item main-nav__item--current">
-                <a class="main-nav__link">Главная</a>
+              <li class="main-nav__item">
+                <a class="main-nav__link main-nav__link--current">Главная</a>
               </li>
               <li class="main-nav__item">
                 <a class="main-nav__link" href="#">О компании</a>
@@ -65,26 +71,26 @@
               <li class="main-nav__item">
                 <a class="main-nav__link" href="#">Наши объекты</a>
               </li>
-              <li class="main-nav__item">
+              <li class="main-nav__item main-nav__item--sub">
                 <a class="main-nav__link" href="catalog.html">Каталог</a>
-                <ul class="main-nav__sub-menu">
-                  <li class="sub-menu__item"><a href="#">Фасадные термопанели с клинкерной плиткой</a></li>
-                  <li class="sub-menu__item"><a href="#">Фасадные термопанели под состаренный кирпич</a></li>
-                  <li class="sub-menu__item"><a href="#">Термопанели для отделки цоколя</a></li>
-                  <li class="sub-menu__item"><a href="#">Затирка для термопанелей Premium</a></li>
-                  <li class="sub-menu__item"><a href="#">Фасадный декор</a></li>
-                  <li class="sub-menu__item"><a href="#">Клинкерные ступени</a></li>
-                  <li class="sub-menu__item"><a href="#">Сопутствующие товары</a></li>
+                <ul class="main-nav__sub-menu sub-menu sub-menu--catalog">
+                  <li class="sub-menu__item"><a class="sub-menu__link" href="#">Фасадные термопанели с клинкерной плиткой</a></li>
+                  <li class="sub-menu__item"><a class="sub-menu__link" href="#">Фасадные термопанели под состаренный кирпич</a></li>
+                  <li class="sub-menu__item"><a class="sub-menu__link" href="#">Термопанели для отделки цоколя</a></li>
+                  <li class="sub-menu__item"><a class="sub-menu__link" href="#">Затирка для термопанелей Premium</a></li>
+                  <li class="sub-menu__item"><a class="sub-menu__link" href="#">Фасадный декор</a></li>
+                  <li class="sub-menu__item"><a class="sub-menu__link" href="#">Клинкерные ступени</a></li>
+                  <li class="sub-menu__item"><a class="sub-menu__link" href="#">Сопутствующие товары</a></li>
                 </ul>
               </li>
-              <li class="main-nav__item">
+              <li class="main-nav__item main-nav__item--sub">
                 <a class="main-nav__link" href="#">Монтаж</a>
-                <ul class="main-nav__sub-menu">
-                  <li class="sub-menu__item"><a href="#">Шеф монтаж</a></li>
-                  <li class="sub-menu__item"><a href="#">Стоимость монтажа</a></li>
+                <ul class="main-nav__sub-menu sub-menu--install">
+                  <li class="sub-menu__item"><a class="sub-menu__link" href="#">Шеф монтаж</a></li>
+                  <li class="sub-menu__item"><a class="sub-menu__link" href="#">Стоимость монтажа</a></li>
                 </ul>
               </li>
-              <li class="main-nav__item">
+              <li class="main-nav__item main-nav__item--sub">
                 <a class="main-nav__link" href="#">Где купить?</a>
               </li>
               <li class="main-nav__item">
@@ -96,67 +102,71 @@
       </section>
       
       <section class="page-header__slider slider">
-        <div class="container">
-          <h2 class="visually-hidden">Термопанели</h2>
-          <input class="visually-hidden" type="radio" id="product-1" name="toggle" checked>
-          <input class="visually-hidden" type="radio" id="product-2" name="toggle">
-          <input class="visually-hidden" type="radio" id="product-3" name="toggle">
-          <div class="slider__controls">
-            <label class="slider__controls-item slider__controls-item--1" for="product-1">Первый</label>
-            <label class="slider__controls-item slider__controls-item--2" for="product-2">Второй</label>
-            <label class="slider__controls-item slider__controls-item--3" for="product-3">Третий</label>
-          </div>
-          <ul class="slider-list">
-            <li class="slider-item">
-              <h1 class="slider__title">
-                Фасадные термопанели и фасадный декор
-              </h1>
-              <p class="slider__desc">
-                Производство, продажа и монтаж <span class="pahe-header__desc-current">под ключ</span>
-              </p>
-              <div class="slider__buttons">
-                <button class="slider__button-buy btn">
-                  Заказать размер
-                </button>
-                <button class="slider__button-learn btn">
-                  Изучить продукт
-                </button>
-              </div>
-            </li>
-            <li class="slider-item">
-              <h1 class="slider__title">
-                Фасадные термопанели и фасадный декор
-              </h1>
-              <p class="slider__desc">
-                Производство, продажа и монтаж <span class="pahe-header__desc-current">под ключ</span>
-              </p>
-              <div class="slider__buttons">
-                <button class="slider__button-buy btn">
-                  Заказать размер
-                </button>
-                <button class="slider__button-learn btn">
-                  Изучить продукт
-                </button>
-              </div>
-            </li>
-            <li class="slider-item">
-              <h1 class="slider__title">
-                Фасадные термопанели и фасадный декор
-              </h1>
-              <p class="slider__desc">
-                Производство, продажа и монтаж <span class="pahe-header__desc-current">под ключ</span>
-              </p>
-              <div class="slider__buttons">
-                <button class="slider__button-buy btn">
-                  Заказать размер
-                </button>
-                <button class="slider__button-learn btn">
-                  Изучить продукт
-                </button>
-              </div>
-            </li>
-          </ul>
+        <h2 class="visually-hidden">Термопанели</h2>
+        <input class="visually-hidden" type="radio" id="product-1" name="toggle" checked>
+        <input class="visually-hidden" type="radio" id="product-2" name="toggle">
+        <input class="visually-hidden" type="radio" id="product-3" name="toggle">
+        <div class="slider__controls">
+          <label class="slider__controls-item slider__controls-item--1" for="product-1">Первый</label>
+          <label class="slider__controls-item slider__controls-item--2" for="product-2">Второй</label>
+          <label class="slider__controls-item slider__controls-item--3" for="product-3">Третий</label>
         </div>
+        <ul class="slider-list">
+          <li class="slider-item">
+            <div class="container">
+              <h1 class="slider__title">
+                Фасадные термопанели и фасадный декор
+              </h1>
+              <p class="slider__desc">
+                Производство, продажа и монтаж <span class="pahe-header__desc-current">под ключ</span>
+              </p>
+              <div class="slider__buttons">
+                <button class="slider__button-buy btn">
+                  Заказать размер
+                </button>
+                <button class="slider__button-learn btn">
+                  Изучить продукт
+                </button>
+              </div>
+            </div>
+          </li>
+          <li class="slider-item">
+            <div class="container">
+              <h1 class="slider__title">
+                Фасадные термопанели и фасадный декор
+              </h1>
+              <p class="slider__desc">
+                Производство, продажа и монтаж <span class="pahe-header__desc-current">под ключ</span>
+              </p>
+              <div class="slider__buttons">
+                <button class="slider__button-buy btn">
+                  Заказать размер
+                </button>
+                <button class="slider__button-learn btn">
+                  Изучить продукт
+                </button>
+              </div>
+            </div>
+          </li>
+          <li class="slider-item">
+            <div class="container">
+              <h1 class="slider__title">
+                Фасадные термопанели и фасадный декор
+              </h1>
+              <p class="slider__desc">
+                Производство, продажа и монтаж <span class="pahe-header__desc-current">под ключ</span>
+              </p>
+              <div class="slider__buttons">
+                <button class="slider__button-buy btn">
+                  Заказать размер
+                </button>
+                <button class="slider__button-learn btn">
+                  Изучить продукт
+                </button>
+              </div>
+            </div>
+          </li>
+        </ul>
       </section>     
     </header>
      
@@ -168,40 +178,40 @@
           </h2>
           <ul class="features__list">
             <li class="features__item">
-              <h3 class="features__title">
+              <h3 class="features__item-title">
                 Доступная цена
               </h3>
               <p class="features__desc">
                 Термопанели значительно дешевле кирпичной кладки
               </p>
-              <img class="features__img" src="" width="" height="" alt="Иконка с монетами">
+              <img class="features__img" src="img/features-coin.png" width="109" height="109" alt="Иконка с монетами">
             </li>
             <li class="features__item">
-              <h3 class="features__title">
+              <h3 class="features__item-title">
                 Экономия теплоэнергии
               </h3>
               <p class="features__desc">
                 Термопанели позволяют экономить до 50% на отоплении и электроэнергии
               </p>
-              <img class="features__img" src="" width="" height="" alt="Иконка с копилкой">
+              <img class="features__img" src="img/features-pig.png" width="109" height="109" alt="Иконка с копилкой">
             </li>
             <li class="features__item">
-              <h3 class="features__title">
+              <h3 class="features__item-title">
                 Отличный вид фасада
               </h3>
               <p class="features__desc">
                 Высокая прочность, долговечность и устойчивость облицовки
               </p>
-              <img class="features__img" src="" width="" height="" alt="Иконка с домом">
+              <img class="features__img" src="img/features-house.png" width="109" height="109" alt="Иконка с домом">
             </li>
             <li class="features__item">
-              <h3 class="features__title">
+              <h3 class="features__item-title">
                 Удобство монтажа
               </h3>
               <p class="features__desc">
                 Укладку термопанелей вполне можно осуществить самостоятельно
               </p>
-              <img class="features__img" src="" width="" height="" alt="Иконка с кирпичной стеной">
+              <img class="features__img" src="img/features-wall.png" width="109" height="109" alt="Иконка с кирпичной стеной">
             </li>
           </ul>
         </div>

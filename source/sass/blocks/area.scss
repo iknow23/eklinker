@@ -1,0 +1,40 @@
+.area__title {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 1.5px;
+  opacity: 0.15;
+}
+
+.area__list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  @include reset-list;
+  margin-top: 10px;
+  margin-bottom: 10px;
+
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.area__item {
+  margin-right: 35px;
+}
+
+.area__number {
+  margin: 0;
+  font-size: 24px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  color: $main-color;
+}
+
+
+//@media (min-width: $tablet-width) {
+
+//}
+
+//@media (min-width: $desktop-width) {
+
+//}

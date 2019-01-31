@@ -1,0 +1,31 @@
+.header-top {
+  position: relative;
+  z-index: 2;
+  padding: 15px 0;
+  color: $white;
+  background: linear-gradient(to right, #000000, #343434);
+  box-shadow: 1px 0 13px 4px rgba(0, 0, 0, 1);
+}
+
+.header-top__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-top__contact {
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.header-top__time {
+  margin-bottom: 10px;
+}
+
+//@media (min-width: $tablet-width) {
+
+//}
+
+//@media (min-width: $desktop-width) {
+
+//}

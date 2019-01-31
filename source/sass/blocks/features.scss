@@ -1,0 +1,41 @@
+.features__title {
+  width: 575px;
+}
+
+.features__list {
+  @include reset-list;
+}
+
+.features__item {
+  position: relative;
+}
+
+.features__item:nth-child(1) {
+  width: 220px;
+}
+
+.features__item-title {
+  margin: 0;
+  margin-bottom: 5px;
+  font-size: 21px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.features__item:nth-child(1) .features__item-title {
+  width: 150px;
+}
+
+.features__desc {
+  margin: 0;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+//@media (min-width: $tablet-width) {
+
+//}
+
+//@media (min-width: $desktop-width) {
+
+//}

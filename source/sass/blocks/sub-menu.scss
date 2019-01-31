@@ -1,0 +1,22 @@
+.sub-menu--catalog {
+  width: 255px;
+}
+
+.sub-menu--install {
+  width: 155px;
+}
+
+.sub-menu__item {
+  margin-bottom: 10px;
+}
+
+.sub-menu__link {
+  display: block;
+  color: $grey;
+  text-transform: none;
+}
+
+.sub-menu__link:hover,
+.sub-menu__link:focus {
+  color: #ffcc00;
+}
