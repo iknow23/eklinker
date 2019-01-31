@@ -300,41 +300,45 @@
           <p class="calculator__desc">
             Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали
           </p>
-          <img class="calculator__img" src="" width="" height="" alt="Изображение термопанели">
+          <img class="calculator__img" src="img/calculator-card.png" width="264" height="161" alt="Изображение термопанели">
           <form class="calculator__form" action="" method="post">
             <fieldset class="calculator__field type">
-              <legend class="type__title">1. Выберите тип термопанели:</legend>
+              <legend class="calculator__legend type__title">1. Выберите тип термопанели:</legend>
               <div class="type__group">
-                <label class="color__label" for="front">Фасадные</label>
+                <label class="calculator__label color__label" for="front">Фасадные</label>
                 <input class="visually-hidden type__input" type="checkbox" id="front" name="front" value="front" checked="">
               </div>
               <div class="type__group">
-                <label class="color__label" for="basement">Цокольные</label>
+                <label class="calculator__label color__label" for="basement">Цокольные</label>
                 <input class="visually-hidden type__input" type="checkbox" id="basement" name="basement" value="basement">
               </div>
             </fieldset>
             <fieldset class="calculator__field color">
-              <legend class="color__title">2. выберите цвет термопанели:</legend>
-              <label for="bg">Цвет</label>
+              <legend class="calculator__legend color__title">2. Выберите цвет термопанели:</legend>
+              <label class="calculator__label" for="bg">Цвет</label>
               <input type="color" name="bg" id="bg" value="#ffcc00">
             </fieldset>
             <fieldset class="calculator__field size">
-              <legend class="size__title">3. Площадь фасада</legend>
-              <div class="size__group">
-                <label class="size__label" for="have-size">Заполните, если знаете квадратуру дома:</label>
-                <input class="size__input" type="text" id="have-size" placeholder="м2">
-              </div>
-              <div class="size__group">
-                <label class="size__label">Или введите параметры дома:</label>
-                <label class="size__label" for="length">длина:</label>
-                <input class="size__input" type="text" id="length" placeholder="м">
-                <label class="size__label" for="width">ширина:</label>
-                <input class="size__input" type="text" id="width" placeholder="м">
-                <label class="size__label" for="height">длина:</label>
-                <input class="size__input" type="text" id="height" placeholder="м">
+              <legend class="calculator__legend size__title">3. Площадь фасада</legend>
+              <div class="size__group--wrapper">
+                <div class="size__group">
+                  <label class="size__label" for="have-size">Заполните, если знаете квадратуру дома:</label>
+                  <input class="size__input" type="text" id="have-size" placeholder="м2">
+                </div>
+                <div class="size__group">
+                  <label class="size__label">Или введите параметры дома:</label>
+                  <div class="size__group-wrapper">
+                    <label for="length">длина:</label>
+                    <input class="size__input" type="text" id="length" placeholder="   м">
+                    <label for="width">ширина:</label>
+                    <input class="size__input" type="text" id="width" placeholder="   м">
+                    <label for="height">длина:</label>
+                    <input class="size__input" type="text" id="height" placeholder="   м">
+                  </div>
+                </div>
               </div>
             </fieldset>
-            <fieldset class="contact__field name">
+            <fieldset class="calculator__field contact">
               <div class="contact__group">
                 <label class="visually-hidden contact__label" for="first-name">Ваше имя</label>
                 <input class="contact__input" type="text" id="first-name" placeholder="Ваше имя*">
@@ -351,10 +355,12 @@
                 <textarea class="contact__input" name="comment" cols="30" rows="10" placeholder="Комментарий"></textarea>
               </div>
             </fieldset>
-            <button class="calculator__button btn" type="submit">Получить расчёт!</button>
-            <span class="calculate__desc">
-              *Поля, отмеченные звёздочкой, обязательны для заполнения. Мы гарантируем, что все данные, указанные вформе заявки останутся конфиденциальными
-            </span>
+            <div class="calculator__footer">
+              <button class="calculator__button btn" type="submit">Получить расчёт!</button>
+              <span class="calculate__desc">
+                *Поля, отмеченные звёздочкой, обязательны для заполнения. Мы гарантируем, что все данные, указанные в форме заявки останутся конфиденциальными
+              </span>
+            </div>
           </form>
         </div>
       </section>

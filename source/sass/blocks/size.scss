@@ -1,0 +1,38 @@
+.size__title {
+  margin: 0;
+}
+
+.size__group--wrapper {
+  display: flex;
+  justify-content: space-between;
+  
+  label {
+    color: $white;
+  }
+}
+
+.size__group {
+  width: 370px;
+}
+
+.size__label {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 15px;
+  font-weight: 700;
+  color: $white;
+}
+
+.size__group:nth-child(1) .size__input {
+  width: 370px;
+  padding: 12px 32px;
+  border-radius: 19px;
+  border: none;
+}
+
+.size__group:nth-child(2) .size__input {
+  width: 48px;
+  padding: 12px 6px;
+  border-radius: 19px;
+  border: none;
+}

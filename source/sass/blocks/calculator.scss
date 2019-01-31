@@ -1,0 +1,93 @@
+.calculator {
+  position: relative;
+  padding-bottom: 75px;
+  background-image: url(../img/bg-calculator.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-color: $black;
+}
+
+.calculator__title {
+  margin-bottom: 50px;
+  color: $white;
+  
+  span {
+    display: block;
+    font-size: 26px;
+    font-weight: 500;
+    text-transform: lowercase;
+  }
+}
+
+.calculator__desc {
+  width: 430px;
+  margin: 0;
+  margin-bottom: 50px;
+  padding-left: 30px;
+  font-size: 14px;
+  font-weight: 400;
+  color: $white;
+  opacity: 0.8;
+}
+
+.calculator__img {
+  position: absolute;
+  right: 485px;
+  top: 280px;
+}
+
+.calculator__form {
+  width: 770px;
+  margin: 0 auto;
+}
+
+.calculator__field {
+  margin: 0;
+  padding: 0;
+  padding-bottom: 20px;
+  border: none;
+}
+
+.calculator__legend {
+  margin-bottom: 20px;
+  font-size: 15px;
+  font-weight: 700;
+  color: $white;
+}
+
+.calculator__label {
+  font-size: 14px;
+  font-weight: 400;
+  color: $white;
+}
+
+.calculator__button {
+  font-size: 15px;
+  color: $black;
+  background-color: $main-color;
+  border: none;
+}
+
+.calculator__footer {
+  display: flex;
+  align-items: center;
+}
+
+.calculate__desc {
+  margin-left: auto;
+  width: 370px;
+  font-size: 12px;
+  font-weight: 400;
+  text-align: right;
+  color: $white;
+  opacity: 0.5;
+}
+
+//@media (min-width: $tablet-width) {
+
+//}
+
+//@media (min-width: $desktop-width) {
+
+//}
