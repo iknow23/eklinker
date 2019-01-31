@@ -41,8 +41,8 @@ img {
 h2 {
   position: relative;
   margin: 0;
-  margin-left: 30px;
-  margin-top: 60px;
+  padding-left: 30px;
+  padding-top: 60px;
   font-size: 36px;
   font-weight: 700;
   color: $font-color;
@@ -54,7 +54,7 @@ h2::after {
 
   position: absolute;
   bottom: -20px;
-  left: 0;
+  left: 30px;
 
   width: 174px;
   height: 3px;

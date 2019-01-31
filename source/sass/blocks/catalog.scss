@@ -1,0 +1,37 @@
+.catalog {
+  position: relative;
+  min-height: 490px;
+  background-image: url('../img/bg-catalog.jpg');
+  background-repeat: no-repeat;
+  background-position: top center;
+  box-shadow: 0px 11px 155px 13px rgba(0, 0, 0, 0.3);
+}
+
+.catalog__title {
+  margin-bottom: 75px;
+}
+
+.catalog__list {
+  position: absolute;
+  width: 1170px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  @include reset-list;
+}
+
+.catalog__item {
+  width: 370px;
+}
+
+.catalog__item-tile {
+  
+}
+
+//@media (min-width: $tablet-width) {
+
+//}
+
+//@media (min-width: $desktop-width) {
+
+//}
