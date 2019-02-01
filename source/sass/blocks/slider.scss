@@ -141,10 +141,20 @@
   border: none;
 }
 
+.slider__button-buy:hover {
+  color: $main-color;
+  border: 1px solid $main-color;
+  background-color: transparent;
+}
+
 .slider__button-learn {
   color: $white;
   background-color: transparent;
   border: 1px solid $white;
+}
+
+.slider__button-learn:hover {
+  opacity: 0.7;
 }
 
 //@media (min-width: $tablet-width) {

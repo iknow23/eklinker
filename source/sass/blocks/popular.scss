@@ -41,11 +41,16 @@
 }
 
 .popular__price {
+  position: relative;
   margin: 0;
   margin-bottom: 15px;
   font-size: 27px;
   font-weight: 700;
   color: #ffa200;
+  
+  .price-symbol::after {
+    left: 65px;
+  }
 }
 
 .popular__button {
