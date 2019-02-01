@@ -1,8 +1,9 @@
 .connection__title {
   position: relative;
   margin: 0;
+  margin-bottom: 110px;
   padding-left: 30px;
-  padding-top: 60px;
+  padding-top: 30px;
   font-size: 36px;
   font-weight: 700;
   color: $font-color;
@@ -20,4 +21,62 @@
   height: 3px;
 
   background-color: $main-color;
+}
+
+.connection__area {
+  position: relative;
+  max-width: 970px;
+  margin: 0 auto;
+  margin-bottom: 50px;
+  padding: 30px 30px 40px 70px;
+  font-size: 14px;
+  font-weight: 400;
+  color: $white;
+}
+
+.connection__area-title {
+  position: absolute;
+  top: -50px;
+  left: -25px;
+  width: 230px;
+  margin: 0;
+  padding: 20px 0;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 22px;
+  text-align: center;
+  text-transform: uppercase;
+  color: $black;
+  background-color: $white;
+  border-radius: 31px;
+  box-shadow: 0 3px 9px 5px rgba(255, 162, 0, 0.45);
+}
+
+.connection__adress-title,
+.connection__add-title {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.connection__add-list {
+  @include reset-list;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  
+  li {
+    width: 30%;
+    opacity: 0.5;
+  }
+}
+
+.connection__add-list li:hover {
+  cursor: pointer;
+  opacity: 1;
+}
+
+.connection__area--moscow {
+  background-image: url('../img/contact-msk.jpg');
+  background-repeat: no-repeat;
 }
