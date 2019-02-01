@@ -72,6 +72,12 @@
   box-shadow: 0 3px 9px 5px rgba(255, 162, 0, 0.45);
 }
 
+.connection__area-title:hover {
+  color: $white;
+  background-color: $main-color;
+  cursor: pointer;
+}
+
 .connection__adress-title,
 .connection__add-title {
   margin: 0;

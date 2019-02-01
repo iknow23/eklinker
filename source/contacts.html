@@ -351,25 +351,31 @@
             Нужна консультация по выбору?
           </h2>
           <form class="advice__form" action="" method="post">
-            <div class="advice__group">
-              <label class="visually-hidden advice__label" for="first-name">Ваше имя</label>
-              <input class="advice__input" type="text" id="first-name" placeholder="Ваше имя*">
+            <div class="advice__field">
+              <div class="advice__group-wrapper">
+                <div class="advice__group">
+                  <label class="visually-hidden advice__label" for="first-name">Ваше имя</label>
+                  <input class="advice__input" type="text" id="first-name" placeholder="Ваше имя*">
+                </div>
+                <div class="advice__group">
+                  <label class="visually-hidden advice__label" for="tel">Ваш телефон</label>
+                  <input class="advice__input" type="tel" id="tel" placeholder="Ваш телефон*">
+                </div>
+                <div class="advice__group">
+                  <label class="visually-hidden advice__label" for="mail">Ваш E-mail</label>
+                  <input class="advice__input" type="email" id="mail" placeholder="Ваш E-mail">
+                </div>
+              </div>
+              <div class="advice__group advice__group--textarea">
+                <textarea class="advice__input" name="comment" cols="30" rows="7" placeholder="Комментарий"></textarea>
+              </div>
             </div>
-            <div class="advice__group">
-              <label class="visually-hidden advice__label" for="tel">Ваш телефон</label>
-              <input class="advice__input" type="tel" id="tel" placeholder="Ваш телефон*">
+            <div class="advice__footer">
+              <button class="advice__button btn" type="submit">Перезвоните мне!</button>
+              <span class="advice__desc">
+                *Поля, отмеченные звёздочкой, обязательны для заполнения. Мы гарантируем, что все данные, указанные вформе заявки останутся конфиденциальными
+              </span>
             </div>
-            <div class="advice__group">
-              <label class="visually-hidden advice__label" for="mail">Ваш E-mail</label>
-              <input class="advice__input" type="email" id="mail" placeholder="Ваш E-mail">
-            </div>
-            <div class="advice__group">
-              <textarea class="advice__input" name="comment" cols="30" rows="10" placeholder="Комментарий"></textarea>
-            </div>
-            <button class="advice__button btn" type="submit">Перезвоните мне!</button>
-            <span class="advice__desc">
-              *Поля, отмеченные звёздочкой, обязательны для заполнения. Мы гарантируем, что все данные, указанные вформе заявки останутся конфиденциальными
-            </span>
           </form>
         </div>
       </section>
