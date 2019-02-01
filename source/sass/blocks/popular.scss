@@ -1,0 +1,73 @@
+.popular {
+  position: relative;
+  min-height: 700px;
+  background-image: url('../img/bg-popular.jpg');
+  background-repeat: no-repeat;
+  background-position: top center;
+}
+
+.popular__title {
+  margin-bottom: 75px;
+  color: $white;
+}
+
+.popular__list {
+  width: 1170px;
+  @include reset-list;
+}
+
+.popular__item {
+  width: 370px !important;
+  min-height: 455px;
+  margin-right: 10px;
+  margin-left: 10px;
+  margin-bottom: 25px;
+  background-color: $white;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  box-shadow: 0px 5px 12px 5px rgba(0, 0, 0, 0.3);
+}
+
+.popular__desc-block {
+  padding: 15px 30px 35px 30px;
+}
+
+.popular__item-tile {
+  margin: 0;
+  margin-bottom: 10px;
+  font-size: 19px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.popular__price {
+  margin: 0;
+  margin-bottom: 15px;
+  font-size: 27px;
+  font-weight: 700;
+  color: #ffa200;
+}
+
+.popular__button {
+  background-color: $main-color;
+  color: $black;
+  border: none;
+}
+
+.popular .slick-dots {
+  position: absolute;
+  bottom: -10px;
+}
+
+.slick-dots button::before {
+  font-size: 10px !important;
+  color: $main-color !important;
+}
+
+//@media (min-width: $tablet-width) {
+
+//}
+
+//@media (min-width: $desktop-width) {
+
+//}
