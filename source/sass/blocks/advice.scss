@@ -47,6 +47,13 @@
   border: none;
 }
 
+.advice__button:hover {
+  margin-bottom: -2px;
+  background-color: transparent;
+  color: $main-color;
+  border: 1px solid $main-color;
+}
+
 .advice__desc {
   width: 370px;
   font-size: 12px;
