@@ -13,13 +13,36 @@
   @include reset-list;
   margin-top: 10px;
   margin-bottom: 10px;
+  padding-left: 20px;
 
   font-size: 16px;
   font-weight: 500;
 }
 
 .area__item {
+  position: relative;
   margin-right: 35px;
+  opacity: 0.5;
+}
+
+.area__item::before {
+  content: '';
+
+  position: absolute;
+  top: -2px;
+  left: -20px;
+
+  display: block;
+  width: 12px;
+  height: 18px;
+
+  background-image: url('../../img/header-address.png');
+  background-repeat: no-repeat;
+}
+
+.area__item:hover {
+  opacity: 1;
+  cursor: pointer;
 }
 
 .area__number {

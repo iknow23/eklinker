@@ -22,6 +22,41 @@
   margin-bottom: 10px;
 }
 
+.header-top__mail {
+  font-size: 14px;
+}
+
+.header-top__time,
+.header-top__mail {
+  position: relative;
+}
+
+.header-top__time::before,
+.header-top__mail::before {
+  content: '';
+
+  position: absolute;
+  top: 0;
+  left: -25px;
+
+  display: block;
+  width: 20px;
+  height: 17px;
+
+  background-repeat: no-repeat;
+}
+
+.header-top__time::before {
+  background-image: url('../../img/header-clock.png');
+}
+
+.header-top__mail::before {
+  top: 3px;
+  left: -27px;
+
+  background-image: url('../../img/header-post.png');
+}
+
 //@media (min-width: $tablet-width) {
 
 //}
