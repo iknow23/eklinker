@@ -57,6 +57,39 @@
   background-image: url('../../img/header-post.png');
 }
 
+.header-top__basket {
+  position: relative;
+  border: none;
+  background: transparent;
+}
+
+.header-top__basket::after {
+  content: '';
+
+  position: absolute;
+  left:-50px;
+  top: -20px;
+
+  width: 47px;
+  height: 47px;
+
+  background-image: url('../../img/basket.png');
+  background-repeat: no-repeat;
+}
+
+.header-top__basket:hover::after {
+  opacity: 0.9;
+}
+
+.header-top__basket:active::after {
+  opacity: 0.3;
+}
+
+.header-top__basket:focus,
+.header-top__basket:active {
+  outline: 1px solid $main-color;
+}
+
 //@media (min-width: $tablet-width) {
 
 //}
