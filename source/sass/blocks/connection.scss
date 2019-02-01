@@ -1,0 +1,23 @@
+.connection__title {
+  position: relative;
+  margin: 0;
+  padding-left: 30px;
+  padding-top: 60px;
+  font-size: 36px;
+  font-weight: 700;
+  color: $font-color;
+  text-transform: uppercase;
+}
+
+.connection__title::after {
+  content: '';
+
+  position: absolute;
+  bottom: -20px;
+  left: 30px;
+
+  width: 174px;
+  height: 3px;
+
+  background-color: $main-color;
+}
