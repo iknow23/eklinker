@@ -65,7 +65,7 @@
 
 @media (min-width: $tablet-width) and (max-width: $desktop-width) {
   .related-product {
-	min-height: 1035px;
+	min-height: 975px;
     background-position: bottom;
   }
   
@@ -76,6 +76,8 @@
   .related-product__list {
 	width: auto;
     justify-content: center;
+    left: 50%;
+    margin-left: -400px;
   }
 
   .related-product__item {
