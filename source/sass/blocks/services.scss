@@ -124,6 +124,42 @@
   }
 }
 
-//@media (min-width: $desktop-width) {
-
-//}
+@media (max-width: $tablet-width) {
+  .services {
+    padding-bottom: 30px;
+	background-image: none;
+  }
+  
+  .services__item:nth-child(1),
+  .services__item:nth-child(2),
+  .services__item:nth-child(3),
+  .services__item:nth-child(4) {
+    width: auto;
+    padding: 0;
+    padding-top: 220px;
+    text-align: center;
+    box-shadow: none;
+    
+    .services_item-title {
+      font-size: 18px;
+      line-height: 47px;
+    }
+    
+    .services__item-desc {
+      font-size: 16px;
+      line-height: 19px;
+    }
+    
+    .services__item-img {
+      position: absolute;
+      top: 0;
+      left: 50%;
+      margin-left: -125px;
+    }
+  }
+  
+  .services__item::after {
+    content: '';
+    width: 0;
+  }
+}
