@@ -25,9 +25,18 @@
   margin-right: 10px;
 }
 
-//@media (min-width: $tablet-width) {
-
-//}
+@media (min-width: $tablet-width) and (max-width: $desktop-width) {
+  .socials {
+	width: 190px;
+    margin-right: 90px;
+    padding-top: 30px;
+    align-items: center;
+  }
+  
+  .socials__logo {
+    margin-bottom: 30px;
+  }
+}
 
 //@media (min-width: $desktop-width) {
 

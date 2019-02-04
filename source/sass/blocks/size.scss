@@ -12,7 +12,8 @@
 }
 
 .size__group {
-  width: 370px;
+  max-width: 370px;
+  width: 100%;
 }
 
 .size__label {
@@ -35,4 +36,29 @@
   padding: 12px 6px;
   border-radius: 19px;
   border: none;
+}
+
+@media (min-width: $tablet-width) and (max-width: $desktop-width) {
+  .calculator__form {
+	max-width: 770px;
+    width: 100%;
+  }
+  
+  .size__group {
+	width: 47%;
+  }
+  
+  .size__group:nth-child(1) .size__input {
+	width: 100%;
+  }
+  
+  .contact-calc__group--textarea,
+  .contact-calc__wrapper {
+    width: auto;
+    width: 47%;
+  }
+  
+  .contact-calc__group {
+    width: 100%;
+  }
 }

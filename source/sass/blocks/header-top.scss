@@ -90,9 +90,34 @@
   outline: 1px solid $main-color;
 }
 
-//@media (min-width: $tablet-width) {
+@media (min-width: $tablet-width) and (max-width: $desktop-width) {
+  .header-top__contact {
+    position: absolute;
+    bottom: -50px;
 
-//}
+    display: flex;
+    justify-content: space-between;
+    margin-left: 25px;
+
+    color: $font-color;
+    font-size: 14px;
+    line-height: 19px;
+    font-weight: 500;
+  }
+
+  .header-top__time {
+    order: 2;
+    margin-left: 50px;
+  }
+
+  .header-top__time::before {
+    background-image: url('../../img/header-clock2.png');
+  }
+
+  .header-top__mail::before {
+    background-image: url('../../img/header-post2.png');
+  }
+}
 
 //@media (min-width: $desktop-width) {
 

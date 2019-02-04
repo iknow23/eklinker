@@ -5,7 +5,7 @@
   background-image: url('../img/bg-pay.png');
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: -115px;
+  background-position: -220px;
 }
 
 .pay .container {
@@ -78,9 +78,36 @@
   border: none;
 }
 
-//@media (min-width: $tablet-width) {
+@media (min-width: $tablet-width) and (max-width: $desktop-width) {
+  .pay {
+    padding-top: 0;
+    background-position: -470px 65px;
+  }
+  
+  .pay__wrapper {
+	width: 100%;
+  }
+  
+  .pay__title {
+    width: 100%;
+	margin-bottom: 55px;
+    font-size: 20px;
+    line-height: 24px;
+    
+    span {
+      display: block;
+    }
+  }
 
-//}
+  .pay__list-img,
+  .pay__footer {
+    margin-left: auto;
+  }
+  
+  .pay__item-img {
+	width: 100px;
+  }
+}
 
 //@media (min-width: $desktop-width) {
 

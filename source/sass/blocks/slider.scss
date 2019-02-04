@@ -65,21 +65,21 @@
   background-image: url('../img/bg-main1.jpg');
   background-repeat: no-repeat;
   background-position: center -380px;
-  background-size: cover;
+  background-size: auto;
 }
 
 .slider-item:nth-child(2) {
   background-image: url('../img/bg-main2.jpg');
   background-repeat: no-repeat;
   background-position: center -380px;
-  background-size: cover;
+  background-size: auto;
 }
 
 .slider-item:nth-child(3) {
   background-image: url('../img/bg-main3.jpg');
   background-repeat: no-repeat;
   background-position: center -380px;
-  background-size: cover;
+  background-size: auto;
 }
 
 #product-1:checked ~ .slider-list .slider-item:nth-child(1) {
@@ -157,14 +157,16 @@
   opacity: 0.7;
 }
 
-//@media (min-width: $tablet-width) {
-//  .container {
-//    width: 768px;
-//    margin: 0 auto;
-//    padding: 0 50px;
-//  }
-//}
-//
+@media (min-width: $tablet-width) and (max-width: $desktop-width) {
+  .slider__title {
+	font-size: 38px;
+    line-height: 46px;
+    width: 670px;
+    margin: 0 auto;
+    margin-bottom: 35px;
+  }
+}
+
 //@media (min-width: $desktop-width) {
 //  .container {
 //    width: 1150px;

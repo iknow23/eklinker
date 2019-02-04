@@ -42,9 +42,20 @@
   top: 0;
 }
 
-//@media (min-width: $tablet-width) {
-
-//}
+@media (min-width: $tablet-width) and (max-width: $desktop-width) {
+  .features__list {
+	justify-content: space-around;
+  }
+  
+  .features__item:not(:first-of-type) {
+    margin-left: 0;
+  }
+  
+  .features__item-title {
+	font-size: 18px;
+    line-height: 22px;
+  }
+}
 
 //@media (min-width: $desktop-width) {
 

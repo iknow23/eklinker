@@ -1,6 +1,6 @@
 .about {
   position: relative;
-  padding-bottom: 195px;
+  padding-bottom: 100px;
   background-image: url('../img/bg-about.jpg');
   background-repeat: no-repeat;
 }
@@ -62,7 +62,7 @@
 .about__list {
   position: absolute;
   top: 240px;
-  right: 220px;
+  left: 57%;
 
   width: 470px;
   padding: 5px;
@@ -78,9 +78,30 @@
   }
 }
 
-//@media (min-width: $tablet-width) {
+@media (min-width: $tablet-width) and (max-width: $desktop-width) {
+  .about {
+    padding-bottom: 70px;
+	background-size: cover;
+  }
 
-//}
+  .about__desc-top,
+  .about__desc-bottom {
+    max-width: 740px;
+    width: 100%;
+    margin-bottom: 30px;
+  }
+
+  .about__list {
+    height: 353px;
+	position: static;
+    margin: 0 auto;
+  }
+
+  .about .slick-dots {
+	position: relative;
+    top: 20px;
+  }
+}
 
 //@media (min-width: $desktop-width) {
 

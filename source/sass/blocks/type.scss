@@ -1,0 +1,37 @@
+.type__group-wrapper {
+  display: flex;
+  justify-content: space-between;
+  width: 230px;
+}
+
+.type__label {
+  position: relative;
+}
+
+.type__label::before,
+.type__label::after {
+  content: '';
+
+  position: absolute;
+  top: -5px;
+  left: 85px;
+
+  width: 30px;
+  height: 30px;
+
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+
+.type__label::before {
+  background-image: url('../img/calc-checkbox-off.png');
+}
+
+.type__input:checked + .type__label::after {
+  background-image: url('../img/calc-checkbox-on.png');
+}
+
+.type__input:disabled + label::before,
+.type__input:disabled + label::after {
+  opacity: 0.2;
+}

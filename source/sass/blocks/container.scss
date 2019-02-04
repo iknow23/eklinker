@@ -4,18 +4,18 @@
   padding: 0 30px;
 }
 
-//@media (min-width: $tablet-width) {
-//  .container {
-//    width: 768px;
-//    margin: 0 auto;
-//    padding: 0 50px;
-//  }
-//}
-//
-//@media (min-width: $desktop-width) {
-//  .container {
-//    width: 1150px;
-//    margin: 0 auto;
-//    padding: 0 50px;
-//  }
-//}
+@media (min-width: $tablet-width) and (max-width: $desktop-width) {
+  .container {
+    width: 768px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+}
+
+@media (max-width: $tablet-width) {
+  .container {
+    width: 320px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+}

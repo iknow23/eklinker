@@ -76,3 +76,15 @@
   background-image: url('../img/footer-tel.png');
   background-repeat: no-repeat;
 }
+
+@media (min-width: $tablet-width) and (max-width: $desktop-width) {
+  .contacts__list {
+    display: flex;
+    flex-wrap: wrap;
+    width: 560px;
+  }
+  
+  .contacts__item {
+    width: 165px;
+  }
+}

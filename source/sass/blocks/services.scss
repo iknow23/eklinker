@@ -114,8 +114,15 @@
   background-color: rgba(255, 162, 0, 0.5);
 }
 
-//@media (min-width: $tablet-width) {
-//}
+@media (min-width: $tablet-width) and (max-width: $desktop-width) {
+  .services {
+	padding-bottom: 45px;
+  }
+  
+  .services__item {
+    max-width: 560px;
+  }
+}
 
 //@media (min-width: $desktop-width) {
 

@@ -2,7 +2,6 @@
   position: relative;
   min-height: 1155px;
   background-image: url('../../img/bg-structure.jpg');
-  background-repeat: no-repeat;
 }
 
 .structure__title {
@@ -31,13 +30,32 @@
 }
 
 .structure__img--main {
-  top: 570px;
-  left: 250px;
+  top: 605px;
 }
 
-//@media (min-width: $tablet-width) {
+@media (min-width: $tablet-width) and (max-width: $desktop-width) {
+  .structure__desc {
+	line-height: 22px;
+  }
+  
+  .structure__desc:last-of-type {
+	margin-bottom: 30px;
+  }
 
-//}
+  .structure__pic {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .structure__img {
+    position: static;
+  }
+  
+  .structure__img--zoom {
+    order: 2;
+    margin-top: -130px;
+  }
+}
 
 //@media (min-width: $desktop-width) {
 

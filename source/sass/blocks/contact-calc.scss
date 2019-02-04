@@ -21,9 +21,12 @@ textarea.contact-calc__input {
   margin-bottom: 0;
 }
 
-//.contact__group-wrapper {
-//  width: 370px;
-//  display: flex;
-//  flex-direction: column;
-//  justify-content: space-between;
-//}
+@media (min-width: $tablet-width) and (max-width: $desktop-width) {
+  .contact-calc__input {
+	width: 345px;
+  }
+  
+  .contact-calc__group--textarea {
+    text-align: right;
+  }
+}

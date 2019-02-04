@@ -224,7 +224,7 @@
           </h2>
           <ul class="catalog__list">
             <li class="catalog__item">
-              <img class="catalog__img" src="img/catalog-card1.jpg" width="368" height="205" alt="Изображение фасадной термопанели с клинкерной плиткой">
+              <img class="catalog__img" src="img/catalog-card1.jpg" alt="Изображение фасадной термопанели с клинкерной плиткой">
               <div class="catalog__desc-block">
                 <h3 class="catalog__item-tile">Фасадные термопанели с клинкерной плиткой</h3>
                 <p class="catalog__desc">Текст/описание/скидки/бонусы</p>
@@ -233,7 +233,7 @@
               </div>
             </li>
             <li class="catalog__item">
-              <img class="catalog__img" src="img/catalog-card2.jpg" width="368" height="205" alt="Изображение фасадной термопанели под состаренный кирпич">
+              <img class="catalog__img" src="img/catalog-card2.jpg" alt="Изображение фасадной термопанели под состаренный кирпич">
               <div class="catalog__desc-block">
                 <h3 class="catalog__item-tile">Фасадные термопанели под состаренный кирпич</h3>
                 <p class="catalog__desc">Текст/описание/скидки/бонусы</p>
@@ -242,7 +242,7 @@
               </div>
             </li>
             <li class="catalog__item">
-              <img class="catalog__img" src="img/catalog-card3.jpg" width="368" height="205" alt="Изображение термопанели для отделки цоколя">
+              <img class="catalog__img" src="img/catalog-card3.jpg" alt="Изображение термопанели для отделки цоколя">
               <div class="catalog__desc-block">
                 <h3 class="catalog__item-tile">Фасадные термопанели с клинкерной плиткой</h3>
                 <p class="catalog__desc">Текст/описание/скидки/бонусы</p>
@@ -262,7 +262,7 @@
           <ul class="related-product__list">
             <li class="related-product__item">
               <p class="related-product__hit hit">Хит</p>
-              <img class="related-product__img" src="img/related-card1.jpg" width="368" height="205" alt="Изображение фасадного декора">
+              <img class="related-product__img" src="img/related-card1.jpg" alt="Изображение фасадного декора">
               <div class="related-product__desc-block">
                 <h3 class="related-product__item-tile">Фасадный декор</h3>
                 <p class="related-product__desc">Текст/описание/скидки/бонусы</p>
@@ -271,7 +271,7 @@
               </div>
             </li>
             <li class="related-product__item">
-              <img class="related-product__img" src="img/related-card2.jpg" width="368" height="205" alt="Изображение фасадного декора">
+              <img class="related-product__img" src="img/related-card2.jpg" alt="Изображение фасадного декора">
               <div class="related-product__desc-block">
                 <h3 class="related-product__item-tile">Фасадный декор</h3>
                 <p class="related-product__desc">Текст/описание/скидки/бонусы</p>
@@ -280,7 +280,7 @@
               </div>
             </li>
             <li class="related-product__item">
-              <img class="related-product__img" src="img/related-card3.jpg" width="368" height="205" alt="Изображение фасадного декора">
+              <img class="related-product__img" src="img/related-card3.jpg" alt="Изображение фасадного декора">
               <div class="related-product__desc-block">
                 <h3 class="related-product__item-tile">Фасадный декор</h3>
                 <p class="related-product__desc">Текст/описание/скидки/бонусы</p>
@@ -294,23 +294,27 @@
       
       <section class="calculator">
         <div class="container">
-          <h2 class="calculator__title">
-            Калькулятор расчёта <span>отделки фасада</span>
-          </h2>
-          <p class="calculator__desc">
-            Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали
-          </p>
+          <div class="calculator__head-wrapper">
+            <h2 class="calculator__title">
+              Калькулятор расчёта <span>отделки фасада</span>
+            </h2>
+            <p class="calculator__desc">
+              Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали
+            </p>
+          </div>
           <img class="calculator__img" src="img/calculator-card.png" width="264" height="161" alt="Изображение термопанели">
           <form class="calculator__form" action="" method="post">
             <fieldset class="calculator__field type">
               <legend class="calculator__legend type__title">1. Выберите тип термопанели:</legend>
-              <div class="type__group">
-                <label class="calculator__label color__label" for="front">Фасадные</label>
-                <input class="visually-hidden type__input" type="checkbox" id="front" name="front" value="front" checked="">
-              </div>
-              <div class="type__group">
-                <label class="calculator__label color__label" for="basement">Цокольные</label>
-                <input class="visually-hidden type__input" type="checkbox" id="basement" name="basement" value="basement">
+              <div class="type__group-wrapper">
+                <div class="type__group">
+                  <input class="visually-hidden type__input" type="radio" id="front" name="type" value="front" checked="">
+                  <label class="calculator__label type__label" for="front">Фасадные</label>
+                </div>
+                <div class="type__group">
+                  <input class="visually-hidden type__input" type="radio" id="basement" name="type" value="basement">
+                  <label class="calculator__label type__label" for="basement">Цокольные</label>
+                </div>
               </div>
             </fieldset>
             <fieldset class="calculator__field color">
@@ -379,8 +383,10 @@
           <p class="structure__desc">
             Такой подход к работе позволяет нам гарантировать соответствие продукции ожиданиям покупателей и поддерживать свою репутацию, как надежного поставщика термопанелей на российский рынок.
           </p>
-          <img class="structure__img structure__img--zoom" src="img/structure-card1.png" width="875" height="882" alt="Увеличенное изображение термопанели">
-          <img class="structure__img structure__img--main" src="img/structure-card2.png" width="1094" height="488" alt="Основное изображение термопанели">
+          <div class="structure__pic">
+            <img class="structure__img structure__img--zoom" src="img/structure-card1.png" alt="Увеличенное изображение термопанели">
+            <img class="structure__img structure__img--main" src="img/structure-card2.png" alt="Основное изображение термопанели">
+          </div>
         </div>
       </section>
       
@@ -456,17 +462,17 @@
         <div class="container">
           <div class="pay__wrapper">
             <p class="pay__title">
-              Принимаем платежи с помощью кредитных и дебетовых карт
+              Принимаем платежи с помощью кредитных <span>и дебетовых карт</span>
             </p>
             <ul class="pay__list-img">
               <li class="pay__item-img">
-                <img class="pay__img pay__img--visa" src="img/pay-card1.png" width="163" height="52" alt="Эмблема карт visa">
+                <img class="pay__img pay__img--visa" src="img/pay-card1.png" alt="Эмблема карт visa">
               </li>
               <li class="pay__item-img">
-                <img class="pay__img pay__img--mastercard" src="img/pay-card2.png" width="123" height="96" alt="Эмблема карт mastercard">
+                <img class="pay__img pay__img--mastercard" src="img/pay-card2.png" alt="Эмблема карт mastercard">
               </li>
               <li class="pay__item-img">
-                <img class="pay__img pay__img--mir" src="img/pay-card3.png" width="197" height="56" alt="Эмблема карт мир">
+                <img class="pay__img pay__img--mir" src="img/pay-card3.png" alt="Эмблема карт мир">
               </li>
             </ul>
             <div class="pay__footer">

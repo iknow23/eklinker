@@ -61,3 +61,17 @@ h2::after {
 
   background-color: $main-color;
 }
+
+@media (min-width: $tablet-width) and (max-width: $desktop-width) {
+  h2 {
+    padding-top: 50px;
+    padding-left: 0;
+    font-size: 28px;
+    line-height: 37px;
+  }
+  
+  h2::after {
+    left: 0;
+    bottom: -15px;
+  }
+}
