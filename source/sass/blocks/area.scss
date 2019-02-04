@@ -54,10 +54,8 @@
 }
 
 
-//@media (min-width: $tablet-width) {
-
-//}
-
-//@media (min-width: $desktop-width) {
-
-//}
+@media (max-width: $tablet-width) {
+  .area {
+    display: none;
+  }
+}

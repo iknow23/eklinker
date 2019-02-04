@@ -1,0 +1,11 @@
+@media (max-width: $tablet-width) {
+  .logo {
+    margin-right: 90px;
+  }
+  
+  img.logo__img {
+    max-width: none;
+    width: 82px;
+    height: 38px;
+  }
+}

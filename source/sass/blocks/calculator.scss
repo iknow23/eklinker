@@ -108,6 +108,29 @@
   }
 }
 
-//@media (min-width: $desktop-width) {
+@media (max-width: $tablet-width) {
+  .calculator {
+    padding-bottom: 30px;
+  }
 
-//}
+  .calculator__title {
+	line-height: 34px;
+    
+    span {
+      font-size: 16px;
+    }
+  }
+  
+  .calculator__desc,
+  .calculator__img {
+    display: none;
+  }
+  
+  .calculator__form {
+    width: 280px;
+  }
+  
+  .calculator__legend {
+    font-size: 13px;
+  }
+}

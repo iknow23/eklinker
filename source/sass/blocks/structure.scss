@@ -57,6 +57,27 @@
   }
 }
 
-//@media (min-width: $desktop-width) {
-
-//}
+@media (max-width: $tablet-width) {
+  .structure {
+    min-height: 1810px;
+    background-image:
+      url('../../img/bg-structure.png'),
+      url('../../img/bg-structure.jpg');
+    background-repeat:
+      no-repeat,
+      repeat;
+    background-position:
+      center 720px,
+      center;
+  }
+  
+  .structure__desc {
+	width: auto;
+    font-size: 14px;
+    line-height: 20px;
+  }
+  
+  .structure__img {
+	display: none;
+  }
+}

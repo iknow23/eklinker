@@ -119,6 +119,12 @@
   }
 }
 
-//@media (min-width: $desktop-width) {
-
-//}
+@media (max-width: $tablet-width) {
+  .header-top__wrapper {
+	justify-content: flex-start;
+  }
+  
+  .header-top__contact {
+    display: none;
+  }
+}

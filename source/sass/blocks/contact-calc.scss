@@ -30,3 +30,30 @@ textarea.contact-calc__input {
     text-align: right;
   }
 }
+
+@media (max-width: $tablet-width) {
+  .contact-calc {
+    flex-direction: column;
+  }
+  
+  .contact-calc__group--textarea,
+  .contact-calc__wrapper {
+    width: auto;
+  }
+  
+  .calculator__footer {
+    flex-direction: column;
+  }
+  
+  .calculator__button {
+    order: 2;
+  }
+  
+  .calculate__desc {
+    width: auto;
+    margin-bottom: 15px;
+    font-size: 11px;
+    line-height: 16px;
+    text-align: center;
+  }
+}

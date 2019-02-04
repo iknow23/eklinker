@@ -57,6 +57,36 @@
   }
 }
 
-//@media (min-width: $desktop-width) {
-
-//}
+@media (max-width: $tablet-width) {
+  .features__title {
+    width: 245px;
+  }
+  
+  .features__title span {
+    display: none;
+  }
+  
+  .features__list {
+	justify-content: center;
+  }
+  
+  .features__item:not(:first-of-type) {
+    margin-left: 0;
+  }
+  
+  .features__item {
+    padding-left: 0;
+    padding-top: 130px;
+    text-align: center;
+  }
+  
+  .features__item-title {
+	font-size: 18px;
+    line-height: 22px;
+  }
+  
+  .features__img {
+	left: 50%;
+    margin-left: -65px;
+  }
+}

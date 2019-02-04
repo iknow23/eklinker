@@ -111,6 +111,38 @@
   }
 }
 
-//@media (min-width: $desktop-width) {
-
-//}
+@media (max-width: $tablet-width) {
+  .related-product {
+	min-height: 1380px;
+    background-position: 0 bottom;
+  }
+  
+  .related-product__title {
+    margin-bottom: 55px;
+	font-size: 16px;
+    line-height: 22px;
+  }
+  
+  .related-product__list {
+	max-width: none;
+    width: 280px;
+  }
+  
+  .related-product__item {
+	width: 280px;
+    margin-bottom: 30px;
+  }
+  
+  .related-product__desc-block {
+    padding: 20px 14px;
+  }
+  
+  .related-product__item-tile {
+    font-size: 15px;
+    line-height: 21px;
+  }
+  
+  .related-product__button {
+    font-size: 14px;
+  }
+}

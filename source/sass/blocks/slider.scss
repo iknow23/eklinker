@@ -167,10 +167,36 @@
   }
 }
 
-//@media (min-width: $desktop-width) {
-//  .container {
-//    width: 1150px;
-//    margin: 0 auto;
-//    padding: 0 50px;
-//  }
-//}
+@media (max-width: $tablet-width) {
+  .slider__title {
+	width: auto;
+    margin-bottom: 45px;
+    font-size: 30px;
+    line-height: 36px;
+  }
+  
+  .slider-item {
+	padding-top: 45px;
+    padding-bottom: 25px;
+  }
+  
+  .slider__desc {
+    margin-bottom: 50px;
+    font-size: 16px;
+    line-height: 22px;
+  }
+  
+  .slider__buttons {
+    width: auto;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .slider__button-buy {
+    margin-bottom: 20px;
+  }
+  
+  .slider__controls {
+    display: none;
+  }
+}

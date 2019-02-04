@@ -111,6 +111,35 @@
   }
 }
 
-//@media (min-width: $desktop-width) {
-
-//}
+@media (max-width: $tablet-width) {
+  .catalog {
+    margin-bottom: 930px;
+  }
+  
+  .catalog__title {
+	margin-bottom: 55px;
+  }
+  
+  .catalog__list {
+	max-width: none;
+    width: 280px;
+  }
+  
+  .catalog__item {
+	width: 280px;
+    margin-bottom: 30px;
+  }
+  
+  .catalog__desc-block {
+    padding: 20px 14px;
+  }
+  
+  .catalog__item-tile {
+    font-size: 15px;
+    line-height: 21px;
+  }
+  
+  .catalog__button {
+    font-size: 14px;
+  }
+}
