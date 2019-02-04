@@ -26,10 +26,12 @@
   background-color: #acacac;
 }
 
-//@media (min-width: $tablet-width) {
-
-//}
-
-//@media (min-width: $desktop-width) {
-
-//}
+@media (max-width: $tablet-width) {
+  .media {
+    padding-bottom: 30px;
+  }
+  
+  .media__title {
+	margin-bottom: 70px;
+  }
+}

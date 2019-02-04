@@ -88,3 +88,9 @@
     width: 165px;
   }
 }
+
+@media (max-width: $tablet-width) {
+  .contacts {
+	width: 280px;
+  }
+}

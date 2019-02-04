@@ -29,10 +29,17 @@
   background-repeat: no-repeat;
 }
 
-//@media (min-width: $tablet-width) {
-
-//}
-
-//@media (min-width: $desktop-width) {
-
-//}
+@media (max-width: $tablet-width) {
+  .copyright {
+    font-size: 12px;
+    line-height: 14px;
+    
+    span {
+      display: block;
+    }
+  }
+  
+  span.copyright__del {
+    display: none;
+  }
+}

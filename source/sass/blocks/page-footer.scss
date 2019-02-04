@@ -70,6 +70,17 @@
   }
 }
 
-//@media (min-width: $desktop-width) {
-
-//}
+@media (max-width: $tablet-width) {
+  .page-footer::before {
+	bottom: 120px;
+  }
+  
+  .page-footer__wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .page-footer__nav {
+    display: none;
+  }
+}

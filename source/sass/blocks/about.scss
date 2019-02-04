@@ -103,6 +103,44 @@
   }
 }
 
-//@media (min-width: $desktop-width) {
-
-//}
+@media (max-width: $tablet-width) {
+  .about {
+    padding-bottom: 30px;
+    background-size: cover;
+  }
+  
+  .about__desc-bottom,
+  .about__desc-top {
+    width: auto;
+    padding: 60px 15px 40px 15px;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+  }
+  
+  .about__desc:not(:last-of-type) {
+    margin-bottom: 60px;
+  }
+  
+  .about__desc::before {
+    top: -45px;
+    left: 50%;
+    margin-left: -14px;
+  }
+  
+  .about__list {
+	position: static;
+    width: 280px;
+    height: 220px;
+    
+    .slick-dots {
+	  position: static;
+      margin-top: -120px;
+    }
+  }
+  
+  .about__img {
+    width: 280px;
+    height: auto;
+  }
+}

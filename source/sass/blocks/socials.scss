@@ -38,6 +38,9 @@
   }
 }
 
-//@media (min-width: $desktop-width) {
-
-//}
+@media (max-width: $tablet-width) {
+  .socials {
+    padding-top: 0;
+    align-items: flex-start;
+  }
+}
