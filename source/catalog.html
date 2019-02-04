@@ -149,7 +149,7 @@
                     <p class="card__count-title">Количество</p>
                   </div>
                 </div>
-                <button class="card__button btn">Купить в один клик</button>
+                <button class="card__button btn">Купить <span>в один клик</span></button>
               </div>
 
               <div class="card__table-wrapper">
@@ -257,12 +257,14 @@
 
       <section class="calculator">
         <div class="container">
-          <h2 class="calculator__title">
-            Калькулятор расчёта <span>отделки фасада</span>
-          </h2>
-          <p class="calculator__desc">
-            Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали
-          </p>
+          <div class="calculator__head-wrapper">
+            <h2 class="calculator__title">
+              Калькулятор расчёта <span>отделки фасада</span>
+            </h2>
+            <p class="calculator__desc">
+              Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали
+            </p>
+          </div>
           <img class="calculator__img" src="img/calculator-card.png" width="264" height="161" alt="Изображение термопанели">
           <form class="calculator__form" action="" method="post">
             <fieldset class="calculator__field type">
@@ -473,16 +475,62 @@
     <script src="slick/slick.js"></script>
     <script>
       $('.card__list-preview').slick({
-        arrows: false,
         dots: true,
+        infinite: false,
+        speed: 300,
         slidesToShow: 3,
-        slidesToScroll: 1
+        slidesToScroll: 1,
+        vertical: false,
+        responsive: [
+          {
+            breakpoint: 1230,
+            settings: {
+              slidesToShow: 3,
+              slidesToScroll: 1,
+              infinite: true,
+              dots: true,
+              vertical: true
+            }
+          },
+          {
+            breakpoint: 760,
+            settings: {
+              slidesToShow: 3,
+              slidesToScroll: 1,
+              vertical: true
+            }
+          }
+          // You can unslick at a given breakpoint now by adding:
+          // settings: "unslick"
+          // instead of a settings object
+        ]
       });
+
       $('.popular__list').slick({
         arrows: false,
         dots: true,
         slidesToShow: 3,
-        slidesToScroll: 1
+        slidesToScroll: 1,
+        responsive: [
+          {
+            breakpoint: 1230,
+            settings: {
+              slidesToShow: 2,
+              slidesToScroll: 1,
+              dots: true
+            }
+          },
+          {
+            breakpoint: 760,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1,
+            }
+          }
+          // You can unslick at a given breakpoint now by adding:
+          // settings: "unslick"
+          // instead of a settings object
+        ]
       });
     </script>
 

@@ -22,10 +22,11 @@
   color: $font-color;
 }
 
-//@media (min-width: $tablet-width) {
-
-//}
-
-//@media (min-width: $desktop-width) {
-
-//}
+@media (min-width: $tablet-width) and (max-width: $desktop-width) {
+  .breadcrumbs {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+    font-size: 14px;
+  }
+}

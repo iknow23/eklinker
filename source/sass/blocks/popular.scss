@@ -69,10 +69,27 @@
   color: $main-color !important;
 }
 
-//@media (min-width: $tablet-width) {
-
-//}
-
-//@media (min-width: $desktop-width) {
-
-//}
+@media (min-width: $tablet-width) and (max-width: $desktop-width) {
+  .popular {
+    min-height: 615px;
+  }
+  
+  .popular__list {
+	width: 640px;
+    margin: 0 auto;
+  }
+  
+  .popular__item {
+	width: 310px !important;
+    min-height: 410px;
+  }
+  
+  .popular__item-tile {
+    font-size: 17px;
+    line-height: 23px;
+  }
+  
+  .popular__button {
+    font-size: 14px;
+  }
+}
