@@ -211,3 +211,82 @@
     display: none;
   }
 }
+
+@media (max-width: $tablet-width) {
+  .card {
+    padding-bottom: 30px;
+  }
+  
+  .card__title {
+	font-size: 18px;
+    line-height: 25px;
+  }
+  
+  .card__wrapper {
+    flex-direction: column;
+  }
+  
+  .card__show-wrapper,
+  .card__img-wrapper {
+    width: 280px;
+  }
+  
+  .card__img {
+    margin: 0;
+  }
+  
+  .card__item-preview {
+    width: 85px !important;
+  }
+  
+  .card__desc-wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .card__pay-wrapper {
+    align-items: flex-start;
+    order: 2;
+  }
+  
+  .card__table-wrapper {
+    margin-bottom: 20px;
+  }
+  
+  .card__table {
+    width: 280px;
+    
+    th,
+    td {
+      font-size: 13px;
+    }
+    
+    td {
+      width: 140px;
+    }
+    
+    tr:last-of-type td {
+      font-size: 14px;
+    }
+  }
+  
+  .card__desc-wrapper {
+	width: auto;
+  }
+  
+  .card__pay-wrapper {
+    flex-direction: column;
+  }
+  
+  .card__pay-wrapper-left {
+    width: 100%;
+  }
+  
+  .card__price-number {
+    text-align: center;
+  }
+  
+  .card__button {
+    width: 100%;
+  }
+}

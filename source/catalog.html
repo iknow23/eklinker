@@ -49,8 +49,9 @@
         </div>
       </section>
       
-      <section class="header-bottom header-bottom--catalog">
+      <section class="header-bottom header-bottom--catalog header-bottom--closed header-bottom--nojs">
         <div class="container">
+          <button class="header-bottom__button" type="button" aria-label="Открыть меню/закрыть меню"></button>
           <nav class="header-bottom__navigation main-nav">
             <ul class="main-nav__list">
               <li class="main-nav__item">
@@ -463,7 +464,7 @@
           <p class="copyright__email">
             evklinker@gmail.com
           </p>
-          2010 - 2019. Сайт носит исключительно ознакомительный характер
+          2010 - 2019. <span>Сайт носит <span class="copyright__del">исключительно</span> ознакомительный характер</span>
         </div>
       </div>
     </footer>
@@ -474,6 +475,21 @@
     <script src="js/picturefill.min.js"></script>
     <script src="slick/slick.js"></script>
     <script>
+      var navMain = document.querySelector(".header-bottom");
+      var navToggle = document.querySelector(".header-bottom__button");
+
+      navMain.classList.remove("header-bottom--nojs");
+
+      navToggle.addEventListener("click", function() {
+        if (navMain.classList.contains("header-bottom--closed")) {
+          navMain.classList.remove("header-bottom--closed");
+          navMain.classList.add("header-bottom--opened");
+        } else {
+          navMain.classList.add("header-bottom--closed");
+          navMain.classList.remove("header-bottom--opened");
+        }
+      });
+      
       $('.card__list-preview').slick({
         dots: true,
         infinite: false,
@@ -521,10 +537,11 @@
             }
           },
           {
-            breakpoint: 760,
+            breakpoint: 768,
             settings: {
               slidesToShow: 1,
               slidesToScroll: 1,
+              vertical: false
             }
           }
           // You can unslick at a given breakpoint now by adding:

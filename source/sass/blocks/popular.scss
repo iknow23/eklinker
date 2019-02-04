@@ -93,3 +93,48 @@
     font-size: 14px;
   }
 }
+
+@media (max-width: $tablet-width) {
+  .popular {
+	min-height: 520px;
+  }
+  
+  .popular__title {
+    margin-bottom: 50px;
+  }
+  
+  .popular__list {
+	max-width: none;
+    width: 280px;
+  }
+  
+  .popular__item {
+	width: 270px !important;
+    min-height: 350px;
+    margin-bottom: 30px;
+    margin-left: 0;
+    box-shadow: 3px 3px 10px 3px rgba(0, 0, 0, 0.3);
+  }
+  
+  .popular__desc-block {
+    padding: 0 14px 20px 14px;
+  }
+  
+  .popular__item-tile {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  
+  .popular__price {
+    font-size: 26px;
+    line-height: 20px;
+  }
+  
+  .price-symbol:: {
+    top: -3px;
+  }
+  
+  .popular__button {
+    font-size: 14px;
+  }
+}
