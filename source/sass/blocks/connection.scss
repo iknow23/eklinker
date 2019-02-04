@@ -46,7 +46,8 @@
   margin-bottom: 50px;
   
   iframe {
-    position: absolute;
+    position: static;
+    width: 100%;
   }
 }
 
@@ -242,4 +243,73 @@
 
   background-image: url('../img/contact-attention.png');
   background-repeat: no-repeat;
+}
+
+@media (min-width: $tablet-width) and (max-width: $desktop-width) {
+  .connection__title {
+    padding: 0;
+  }
+  
+  .connection__area {
+    width: 640px;
+  }
+  
+  .connection__slider {
+    display: none;
+  }
+  
+  .connection__map {
+    margin-bottom: 100px;
+  }
+}
+
+@media (max-width: $tablet-width) {
+  .connection__title {
+    padding-left: 0;
+  }
+  
+  .connection__title::after {
+    left: 0;
+  }
+  
+  .connection__slider {
+    display: none;
+  }
+  
+  .connection__area {
+    margin-bottom: 80px;
+    padding: 40px 20px 25px 65px;
+  }
+  
+  .connection__area--moscow {
+    margin-bottom: 30px;
+  }
+  
+  .connection__area-title {
+    width: 225px;
+    left: 50%;
+    margin-left: -112px;
+  }
+  
+  .connection__wrapper {
+    width: auto;
+  }
+  
+  .connection__map {
+    margin-bottom: 80px;
+    margin-left: -20px;
+    margin-right: -20px;
+  }
+  
+  .connection__attention {
+    width: auto;
+    font-size: 13px;
+    line-height: 19px;
+  }
+  
+  .connection__attention::before {
+    top: -45px;
+    left: 50%;
+    margin-left: -17px;
+  }
 }
