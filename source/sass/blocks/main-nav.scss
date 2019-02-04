@@ -76,6 +76,18 @@
   .main-nav__list {
 	display: none;
   }
+  
+  .main-nav__item {
+	width: 185px;
+  }
+  
+  .main-nav__link {
+	font-size: 14px;
+  }
+
+  .main-nav__item--sub::after {
+    width: 0;
+  }
 }
 
 //@media (min-width: $desktop-width) {

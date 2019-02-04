@@ -49,8 +49,9 @@
         </div>
       </section>
       
-      <section class="header-bottom">
+      <section class="header-bottom header-bottom--closed header-bottom--nojs">
         <div class="container">
+          <button class="header-bottom__button" type="button" aria-label="Открыть меню/закрыть меню"></button>
           <nav class="header-bottom__navigation main-nav">
             <ul class="main-nav__list">
               <li class="main-nav__item">
@@ -698,6 +699,21 @@
     <script src="js/picturefill.min.js"></script>
     <script src="slick/slick.js"></script>
     <script>
+      var navMain = document.querySelector(".header-bottom");
+      var navToggle = document.querySelector(".header-bottom__button");
+
+      navMain.classList.remove("header-bottom--nojs");
+
+      navToggle.addEventListener("click", function() {
+        if (navMain.classList.contains("header-bottom--closed")) {
+          navMain.classList.remove("header-bottom--closed");
+          navMain.classList.add("header-bottom--opened");
+        } else {
+          navMain.classList.add("header-bottom--closed");
+          navMain.classList.remove("header-bottom--opened");
+        }
+      });
+
       $('.about__list').slick({
         arrows: false,
         dots: true,
