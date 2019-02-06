@@ -13,7 +13,15 @@
 .features__item {
   position: relative;
   margin-bottom: 30px;
-  padding-left: 130px;
+  padding: 5px 1px 20px 130px;
+}
+
+.features__item:hover {
+  padding: 4px 1px 20px 129px;
+  border: 1px solid $white;
+  box-shadow: 0 1px 15px 1px rgba(0, 0, 0, 0.3);
+  border-radius: 25px;
+  cursor: pointer;
 }
 
 .features__item:not(:first-of-type) {
@@ -38,13 +46,25 @@
 
 .features__img {
   position: absolute;
-  left: 0;
-  top: 0;
+  left: 5px;
+  top: 5px;
+}
+
+.features__img:hover {
+  cursor: pointer;
 }
 
 @media (min-width: $tablet-width) and (max-width: $desktop-width) {
   .features__list {
 	justify-content: space-around;
+  }
+  
+  .features__item:hover {
+    padding: 4px 1px 20px 129px;
+    border: 1px solid $white;
+    box-shadow: 0 1px 15px 1px rgba(0, 0, 0, 0.3);
+    border-radius: 25px;
+    cursor: pointer;
   }
   
   .features__item:not(:first-of-type) {
@@ -54,6 +74,12 @@
   .features__item-title {
 	font-size: 18px;
     line-height: 22px;
+  }
+  
+  .features__img {
+    position: absolute;
+    left: 5px;
+    top: 5px;
   }
 }
 

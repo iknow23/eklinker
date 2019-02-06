@@ -74,8 +74,15 @@
 }
 
 .pay__button {
+  color: $black;
   background-color: $main-color;
   border: none;
+}
+
+.pay__button:hover {
+  padding: 22px 45px;
+  background-color: transparent;
+  border: 1px solid $main-color;
 }
 
 @media (min-width: $tablet-width) and (max-width: $desktop-width) {
@@ -106,6 +113,12 @@
   
   .pay__item-img {
 	width: 100px;
+  }
+  
+  .pay__button:hover {
+    padding: 22px 45px;
+    background-color: transparent;
+    border: 1px solid $main-color;
   }
 }
 

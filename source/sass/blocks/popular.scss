@@ -1,9 +1,13 @@
 .popular {
   position: relative;
   min-height: 700px;
-  background-image: url('../img/bg-popular.jpg');
-  background-repeat: no-repeat;
-  background-position: top center;
+}
+
+.bg-popular {
+	position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
 }
 
 .popular__title {
@@ -28,6 +32,11 @@
   box-shadow: 0px 5px 12px 5px rgba(0, 0, 0, 0.3);
 }
 
+.popular__item:hover {
+  box-shadow: 0px 1px 15px 1px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+}
+
 .popular__desc-block {
   padding: 15px 30px 35px 30px;
 }
@@ -46,7 +55,7 @@
   margin-bottom: 15px;
   font-size: 27px;
   font-weight: 700;
-  color: #ffa200;
+  color: $font-color;
   
   .price-symbol::after {
     left: 65px;
@@ -57,6 +66,12 @@
   background-color: $main-color;
   color: $black;
   border: none;
+}
+
+.popular__button:hover {
+  padding: 22px 44px;
+  background-color: transparent;
+  border: 1px solid $main-color;
 }
 
 .popular .slick-dots {
@@ -84,6 +99,11 @@
     min-height: 410px;
   }
   
+  .popular__item:hover {
+    box-shadow: 0px 1px 15px 1px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+  }
+  
   .popular__item-tile {
     font-size: 17px;
     line-height: 23px;
@@ -91,6 +111,12 @@
   
   .popular__button {
     font-size: 14px;
+  }
+  
+  .popular__button:hover {
+    padding: 22px 44px;
+    background-color: transparent;
+    border: 1px solid $main-color;
   }
 }
 

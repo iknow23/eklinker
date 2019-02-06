@@ -20,13 +20,19 @@
   line-height: 24px;
 }
 
+.structure__pic-block1,
+.structure__pic-block2 {
+  margin: 0;
+}
+
 .structure__img {
   position: absolute;
 }
 
 .structure__img--zoom {
   top: -80px;
-  right: 0;
+  left: 50%;
+  margin-left: -150px;
 }
 
 .structure__img--main {
@@ -54,6 +60,7 @@
   .structure__img--zoom {
     order: 2;
     margin-top: -130px;
+    margin-left: 0;
   }
 }
 

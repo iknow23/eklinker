@@ -5,6 +5,13 @@
   flex-wrap: wrap;
 }
 
+.main-nav__list .container {
+  @include reset-list;
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+
 .main-nav__item {
   position: relative;
   text-transform: uppercase;
@@ -26,24 +33,90 @@
 
 .main-nav__link--current {
   font-weight: 700;
-  color: $black;
-  opacity: 0.5;
+  color: $main-color;
 }
 
 .main-nav__link--current:hover,
 .main-nav__link--current:focus {
   background-color: transparent;
-  color: $black;
-  opacity: 0.5;
+  color: $main-color;
 }
 
-.main-nav__item:hover .main-nav__sub-menu,
-.main-nav__item:focus .main-nav__sub-menu {
-  display: block;
+.menu{
+	list-style: none;
+	padding-left: 0;
+	display: flex;
+	margin: 0 auto;
+	
+	&:after{
+		content:" ";
+		display: block;
+		clear: both;
+	}
+	
+	.menu-item{
+		position: relative;
+		
+		&:hover > .sub-menu{
+			transform: scale(1);
+			opacity: 1;
+		}
+		
+		&:hover > a{ background-color: rgba(255,255,255,.3) }
+		
+		a{
+			display: block;
+			transition: .3s ease;
+		}	
+	}
+}
+.sub-menu{
+  list-style: none;
+  @include reset-list;
+  position: absolute;
+  z-index: 2;
+  padding: 10px;
+  font-size: 12px;
+  font-weight: 400;
+  background-color: $white;
+  box-shadow: 0px 3px 7px 3px rgba(255, 255, 255, 0.35);
+  transition: .3s ease;
+  transform-origin: 0 0;
+  transform: scale(0);
+  opacity: 0;
+
+  .menu-item{
+    float: none;
+    transition: 0.3s ease;
+    transform: translateY(-20px);
+    opacity: 0;
+      a {
+        color: $black;
+      }
+    }
+
+  .sub-menu{
+    left: 100%;
+    top: 0;
+  }
 }
 
-.main-nav__item--sub:hover::after {
-  background-image: none;
+/* Static Delay with CSS */
+.css-transform {
+	.menu-item:hover > .sub-menu > .menu-item{
+	  transform: translateY(0);
+      opacity: 1;
+	}
+	.sub-menu .menu-item{
+		$delay: 100;
+        @for $i from 1 through 10{
+		  &:nth-child(#{$i}){
+		  transition-delay: #{$delay}ms;
+
+        $delay: $delay + 50;
+      }
+    }
+  }	
 }
 
 .main-nav__item--sub::after {
@@ -60,19 +133,29 @@
   background-repeat: no-repeat;
 }
 
-.main-nav__sub-menu {
-  display: none;
-  @include reset-list;
-  position: absolute;
-  z-index: 2;
-  padding: 10px;
-  font-size: 12px;
-  font-weight: 400;
-  background-color: $white;
-  box-shadow: 0px 3px 7px 3px rgba(255, 255, 255, 0.35);
+.main-nav__sub-menu .sub-menu__link:hover {
+  color: $main-color;
 }
 
-@media (min-width: $mobile-width) and (max-width: $desktop-width) {
+.main-nav__sub-menu {
+  box-shadow: 0px 5px 7px 1px rgba(0, 0, 0, 0.3);
+}
+
+@media (max-width: $desktop-width) {
+  .main-nav__sub-menu {
+	display: none;
+  }
+  
+  .main-nav__list {
+	box-shadow: 0px 5px 7px 1px rgba(0, 0, 0, 0.3);
+  }
+  
+  .main-nav__list .container {
+  	margin: 0 auto;
+  }
+}
+
+@media (min-width: 100px) and (max-width: $desktop-width) {
   .main-nav__list {
 	display: none;
   }

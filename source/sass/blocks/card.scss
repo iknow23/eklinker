@@ -1,5 +1,10 @@
+.page-catalog {
+  margin-top: -15px;
+}
+
 .card {
-  padding-bottom: 70px;
+  padding-bottom: 130px;
+  background-color: $white;
 }
 
 .card__title {
@@ -7,6 +12,7 @@
 }
 
 .card__wrapper {
+  position: relative;
   display: flex;
   justify-content: space-between;
 }
@@ -50,12 +56,13 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 15px;
 }
 
 .card__price-title,
 .card__count-title {
   margin: 0;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
   font-size: 14px;
   font-weight: 700;
   line-height: 22px;
@@ -63,14 +70,45 @@
 }
 
 .card__price-number {
+  position: relative;
   display: inline-block;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   padding: 0 60px 0 35px;
-  font-size: 17px;
+  font-size: 22px;
   font-weight: 700;
   line-height: 38px;
   border: 2px solid $font-color;
   border-radius: 15px;
+}
+
+.card__price-number::after {
+  content: '';
+  
+  position: absolute;
+  top: 10px;
+  left: 125px;
+
+  width: 13px;
+  height: 17px;
+  
+  background-image: url('../img/card.png');
+  background-repeat: no-repeat;
+}
+
+.card__input-count input {
+  padding: 7px 5px;
+  border-radius: 10px;
+  border: none;
+}
+
+.card__input-count input:nth-child(1) {
+  width: 65px;
+  box-shadow: inset 0px 0px 10px 0px rgba(0, 0, 0, 0.35);
+}
+
+.card__input-count input:nth-child(2),
+.card__input-count input:nth-child(3) {
+  width: 45px;
 }
 
 .card__button {
@@ -79,6 +117,11 @@
   line-height: 22px;
   background-color: $main-color;
   border: none;
+}
+
+.card__button:hover {
+  background-color: transparent;
+  border: 1px solid $main-color;
 }
 
 .card__table {
@@ -118,7 +161,17 @@
   border: none;
 }
 
+.card__td-title {
+  margin: 0;
+  margin-bottom: 10px;
+  font-size: 16px;
+  font-weight: 700;
+}
+
 .card__td-desc {
+  position: absolute;
+  left: 0;
+  bottom: -85px;
   padding-left: 25px;
   font-size: 14px;
   font-weight: 400;
@@ -189,26 +242,35 @@
     width: 165px;
     font-size: 14px;
   }
-  
-  .card__table tr:last-of-type td {
-	position: absolute;
-    width: 560px;
-  }
-  
+
   .card__pay-wrapper {
     width: 185px;
     order: 2;
     flex-direction: column;
     justify-content: space-between;
     align-items: stretch;
+    margin-bottom: 30px;
   }
   
   .card__pay-wrapper-left {
-    margin-bottom: 130px;
+    margin-bottom: 105px;
   }
   
   .card__button span {
     display: none;
+  }
+  
+  .card__td-desc {
+    bottom: -130px;
+  }
+  
+  .card__price-number {
+	font-size: 17px;
+  }
+  
+  .card__price-number::after {
+	top: 9px;
+    left: 105px;
   }
 }
 
@@ -247,6 +309,7 @@
   .card__pay-wrapper {
     align-items: flex-start;
     order: 2;
+    margin-top: 255px;
   }
   
   .card__table-wrapper {
@@ -283,10 +346,33 @@
   }
   
   .card__price-number {
+    width: 100%;
     text-align: center;
+  }
+  
+  .card__price-number::after {
+	left: 165px;
+  }
+  
+  .card__count {
+	margin-bottom: 25px;
   }
   
   .card__button {
     width: 100%;
+  }
+  
+  .card__td-desc {
+    bottom: 245px;
+    font-size: 13px;
+  }
+  
+  .card__td-title {
+    margin-bottom: 5px;
+	font-size: 13px;
+  }
+  
+  .card__price-number {
+	font-size: 17px;
   }
 }

@@ -1,6 +1,21 @@
 .header-bottom {
+  position: fixed;
+//  top: 0;
+  top: 115px;
+  z-index: 1;
+  width: 100%;
   min-height: 44px;
+  margin: 0 auto;
+//  padding-top: 115px;
   background-color: $white;
+}
+
+.sticky {
+  top: 0;
+  z-index: 99999;
+  padding-top: 0 !important;
+  box-shadow: 1px 0 13px 4px $black;
+  transition: all 1.5s ease;
 }
 
 .header-bottom--catalog {
@@ -13,10 +28,16 @@
 }
 
 @media (min-width: $mobile-width) and (max-width: $desktop-width) {
+  .main-nav__list .container {
+	display: flex;
+    flex-wrap: wrap;
+  }
+  
   .header-bottom__button {
     position: absolute;
-    top: 100px;
-    right: 0;
+    top: 0;
+    left: 50%;
+    margin-left: 305px;
     display: block;
     width: 80px;
     height: 80px;
@@ -26,8 +47,9 @@
   }
 
   .header-bottom--closed .header-bottom__button {
-    bottom: 0;
-    right: 0;
+    top: -15px;
+    left: 50%;
+    margin-left: 305px;
   }
 
   .header-bottom--closed .header-bottom__button::before {
@@ -82,9 +104,17 @@
     justify-content: flex-start;
     background-color: $white;
   }
+  
+  .header-bottom--opened .header-bottom__button {
+	top: 110px;
+  }
 }
 
 @media (max-width: $tablet-width) {
+  .header-top {
+	position: static;
+  }
+  
   .header-bottom {
     min-height: 0;
   }
@@ -92,13 +122,18 @@
   .header-bottom__button {
     z-index: 101;
     top: 0;
-    left: 64%;
+    left: 45px;
   }
 
   .header-bottom--closed .header-bottom__button::before {
     box-shadow: 0 6px 0 0 $white, 0 12px 0 0 $white;
   }
 
+  .header-bottom--closed .header-bottom__button {
+    top: -115px;
+    margin-left: 85px;
+  }
+  
   .header-bottom--closed .header-bottom__button::before {
     background-color: $white;
   }
@@ -108,12 +143,20 @@
   }
   
   .header-bottom--opened .header-bottom__button {
-    top: 145px;
+    top: -30px;
+    left: 50%;
+    margin-left: 25px;
   }
-  
+
   .header-bottom--opened .header-bottom__button::before,
   .header-bottom--opened .header-bottom__button::after {
     left: 64%;
     top: 30px;
+  }
+  
+  .header-bottom--opened .main-nav__list {
+	top: -45px;
+    left: 0;
+    right: 0;
   }
 }

@@ -1,5 +1,10 @@
+.page-contacts {
+  margin-top: -15px;
+}
+
 .connection {
   padding-bottom: 50px;
+  background-color: $white;
 }
 
 .connection__title {
@@ -43,7 +48,7 @@
 }
 
 .connection__map {
-  margin-bottom: 50px;
+  margin-bottom: 70px;
   
   iframe {
     position: static;
@@ -92,7 +97,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  
+
   li {
     width: 30%;
     opacity: 0.5;
@@ -216,8 +221,18 @@
 }
 
 .connection__area--ryazan {
-  margin-bottom: 35px;
+  margin-bottom: 90px;
   background-image: url('../img/contact-ryazan.jpg');
+}
+
+.connection__area--kaluga {
+  margin-bottom: 90px;
+  background-image: url('../img/contact-caluga.jpg');
+}
+
+.connection__area--volgograd {
+  margin-bottom: 35px;
+  background-image: url('../img/contact-volgograd.jpg');
 }
 
 .connection__attention {
@@ -245,6 +260,69 @@
   background-repeat: no-repeat;
 }
 
+.connection__tel-desc {
+  font-size: 17px;
+}
+
+
+
+
+
+
+
+
+
+.popup {
+	position: absolute;
+	height:100%;
+	width:100%;
+	top:0;
+	left:0;
+	display:none;
+	text-align:center;
+}
+
+.popup_bg {
+	background:rgba(0,0,0,0.3);
+	position:fixed;
+	z-index:1;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	width: auto;
+  height: auto;
+}
+
+
+.popup_img {
+	position: fixed;
+	z-index:2;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%,-50%);
+	max-height: 90%;
+}
+
+.popup_img {
+  pointer-events: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @media (min-width: $tablet-width) and (max-width: $desktop-width) {
   .connection__title {
     padding: 0;
@@ -260,6 +338,43 @@
   
   .connection__map {
     margin-bottom: 100px;
+  }
+  
+  .connection__area--moscow .connection__add {
+	margin-top: -80px;
+  }
+
+  .connection__area--moscow .connection__add-list {
+    width: 200px;
+    height: 100px;
+    overflow: scroll;
+    
+    li {
+      width: auto;
+    }
+  }
+  
+  .connection__area--moscow .connection__wrapper {
+    position: relative;
+    width: 200px;
+    margin-left: 280px;
+  }
+  
+  .connection__area--moscow .connection__adress {
+    position: absolute;
+    left: -280px;
+  }
+
+  .connection__area--moscow .connection__tel {
+    order: 2;
+  }
+  
+  .connection__area--moscow .connection__mail {
+    order: 3;
+  }
+  
+  .connection__add-title {
+    margin-bottom: 5px;
   }
 }
 
@@ -299,6 +414,20 @@
     margin-bottom: 80px;
     margin-left: -20px;
     margin-right: -20px;
+  }
+  
+  .connection__add-title {
+    margin-bottom: 5px;
+  }
+
+  .connection__area--moscow .connection__add-list {
+    width: 200px;
+    height: 100px;
+    overflow: scroll;
+    
+    li {
+      width: auto;
+    }
   }
   
   .connection__attention {

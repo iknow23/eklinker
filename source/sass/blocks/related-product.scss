@@ -29,6 +29,11 @@
   box-shadow: 0px 15px 25px 5px rgba(0, 0, 0, 0.3);
 }
 
+.related-product__item:hover {
+  box-shadow: 0px 1px 15px 1px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+}
+
 .related-product__desc-block {
   padding: 35px 30px;
 }
@@ -54,13 +59,19 @@
   margin-bottom: 15px;
   font-size: 27px;
   font-weight: 700;
-  color: #ffa200;
+  color: $font-color;
 }
 
 .related-product__button {
   background-color: $main-color;
   color: $black;
   border: none;
+}
+
+.related-product__button:hover {
+  padding: 22px 44px;
+  background-color: transparent;
+  border: 1px solid $main-color;
 }
 
 @media (min-width: $tablet-width) and (max-width: $desktop-width) {
@@ -88,6 +99,11 @@
     padding-left: 300px;
   }
   
+  .related-product__item:hover {
+    box-shadow: 0px 1px 15px 1px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+  }
+  
   .related-product__img {
     position: absolute;
     left: 0;
@@ -110,6 +126,12 @@
   
   .related-product__button {
     font-size: 14px;
+  }
+  
+  .related-product__button:hover {
+    padding: 22px 44px;
+    background-color: transparent;
+    border: 1px solid $main-color;
   }
 }
 

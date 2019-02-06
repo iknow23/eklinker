@@ -54,6 +54,16 @@
   cursor: pointer;
 }
 
+.contacts__item-title span {
+  display: block;
+  margin-top: 5px;
+}
+
+.contacts__item-title:hover span {
+  color: $main-color;
+  cursor: pointer;
+}
+
 .contacts__number {
   position: relative;
   padding-left: 20px;

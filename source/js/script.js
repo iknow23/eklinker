@@ -1,1 +1,1 @@
-'use strict';
+var header = new Headhesive('.header-bottom');

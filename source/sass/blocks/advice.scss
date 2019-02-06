@@ -1,6 +1,6 @@
 .advice {
   padding-bottom: 75px;
-  background-image: url('../../img/bg-advice.jpg');
+  background-image: url('../img/bg-advice.jpg');
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -64,9 +64,19 @@
   opacity: 0.5;
 }
 
+.advice__input:hover {
+  box-shadow: 0 3px 12px 5px rgba(255, 255, 255, 0.3);
+  cursor: pointer;
+}
+
 @media (min-width: $tablet-width) and (max-width: $desktop-width) {
   .advice__form {
     width: auto;
+  }
+  
+  .advice__input:hover {
+    box-shadow: 0 3px 12px 5px rgba(255, 255, 255, 0.3);
+    cursor: pointer;
   }
 }
 

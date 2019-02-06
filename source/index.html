@@ -16,7 +16,6 @@
     <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body>
-    
     <header class="page-header">
       <section class="header-top">
         <div class="container">
@@ -35,10 +34,10 @@
             <div class="header-top__area-list area">
               <p class="area__title">Выберите регион:</p>
               <ul class="area__list">
-                <li class="area__item">Москва</li>
-                <li class="area__item">Ростов-на-Дону</li>
-                <li class="area__item">Тула</li>
-                <li class="area__item">Рязань</li>
+                <li class="area__item area__item--1">Москва</li>
+                <li class="area__item area__item--2">Ростов-на-Дону</li>
+                <li class="area__item area__item--3">Тула</li>
+                <li class="area__item area__item--4">Рязань</li>
               </ul>
               <p class="area__number">8(495)324-00-04</p>
             </div>
@@ -53,50 +52,52 @@
         <div class="container">
           <button class="header-bottom__button" type="button" aria-label="Открыть меню/закрыть меню"></button>
           <nav class="header-bottom__navigation main-nav">
-            <ul class="main-nav__list">
-              <li class="main-nav__item">
+            <ul class="main-nav__list menu css-transform">
+            <div class="container">
+              <li class="main-nav__item menu-item">
                 <a class="main-nav__link main-nav__link--current">Главная</a>
               </li>
-              <li class="main-nav__item">
+              <li class="main-nav__item menu-item">
                 <a class="main-nav__link" href="#">О компании</a>
               </li>
-              <li class="main-nav__item">
+              <li class="main-nav__item menu-item">
                 <a class="main-nav__link" href="#">Новости</a>
               </li>
-              <li class="main-nav__item">
+              <li class="main-nav__item menu-item">
                 <a class="main-nav__link" href="#">О термопанелях</a>
               </li>
-              <li class="main-nav__item">
+              <li class="main-nav__item menu-item">
                 <a class="main-nav__link" href="#">Акции</a>
               </li>
-              <li class="main-nav__item">
+              <li class="main-nav__item menu-item">
                 <a class="main-nav__link" href="#">Наши объекты</a>
               </li>
-              <li class="main-nav__item main-nav__item--sub">
+              <li class="main-nav__item main-nav__item--sub menu-item menu-item-has-children">
                 <a class="main-nav__link" href="catalog.html">Каталог</a>
                 <ul class="main-nav__sub-menu sub-menu sub-menu--catalog">
-                  <li class="sub-menu__item"><a class="sub-menu__link" href="#">Фасадные термопанели с клинкерной плиткой</a></li>
-                  <li class="sub-menu__item"><a class="sub-menu__link" href="#">Фасадные термопанели под состаренный кирпич</a></li>
-                  <li class="sub-menu__item"><a class="sub-menu__link" href="#">Термопанели для отделки цоколя</a></li>
-                  <li class="sub-menu__item"><a class="sub-menu__link" href="#">Затирка для термопанелей Premium</a></li>
-                  <li class="sub-menu__item"><a class="sub-menu__link" href="#">Фасадный декор</a></li>
-                  <li class="sub-menu__item"><a class="sub-menu__link" href="#">Клинкерные ступени</a></li>
-                  <li class="sub-menu__item"><a class="sub-menu__link" href="#">Сопутствующие товары</a></li>
+                  <li class="sub-menu__item menu-item"><a class="sub-menu__link" href="#">Фасадные термопанели с клинкерной плиткой</a></li>
+                  <li class="sub-menu__item menu-item"><a class="sub-menu__link" href="#">Фасадные термопанели под состаренный кирпич</a></li>
+                  <li class="sub-menu__item menu-item"><a class="sub-menu__link" href="#">Термопанели для отделки цоколя</a></li>
+                  <li class="sub-menu__item menu-item"><a class="sub-menu__link" href="#">Затирка для термопанелей Premium</a></li>
+                  <li class="sub-menu__item menu-item"><a class="sub-menu__link" href="#">Фасадный декор</a></li>
+                  <li class="sub-menu__item menu-item"><a class="sub-menu__link" href="#">Клинкерные ступени</a></li>
+                  <li class="sub-menu__item menu-item"><a class="sub-menu__link" href="#">Сопутствующие товары</a></li>
                 </ul>
               </li>
-              <li class="main-nav__item main-nav__item--sub">
+              <li class="main-nav__item main-nav__item--sub menu-item menu-item-has-children">
                 <a class="main-nav__link" href="#">Монтаж</a>
-                <ul class="main-nav__sub-menu sub-menu--install">
-                  <li class="sub-menu__item"><a class="sub-menu__link" href="#">Шеф монтаж</a></li>
-                  <li class="sub-menu__item"><a class="sub-menu__link" href="#">Стоимость монтажа</a></li>
+                <ul class="main-nav__sub-menu sub-menu sub-menu--install">
+                  <li class="sub-menu__item menu-item"><a class="sub-menu__link" href="#">Шеф монтаж</a></li>
+                  <li class="sub-menu__item menu-item"><a class="sub-menu__link" href="#">Стоимость монтажа</a></li>
                 </ul>
               </li>
-              <li class="main-nav__item main-nav__item--sub">
+              <li class="main-nav__item main-nav__item--sub menu-item">
                 <a class="main-nav__link" href="#footer-contacts">Где купить?</a>
               </li>
-              <li class="main-nav__item">
+              <li class="main-nav__item menu-item">
                 <a class="main-nav__link" href="contacts.html">Контакты</a>
               </li>
+              </div>
             </ul>
           </nav>
         </div>
@@ -175,7 +176,7 @@
       <section class="features">
         <div class="container">
           <h2 class="features__title">
-            Преимущества <span>модульной</span> технологии
+            Преимущества <span>фасадных</span> термопанелей
           </h2>
           <ul class="features__list">
             <li class="features__item">
@@ -321,7 +322,14 @@
             <fieldset class="calculator__field color">
               <legend class="calculator__legend color__title">2. Выберите цвет термопанели:</legend>
               <label class="calculator__label" for="bg">Цвет</label>
-              <input type="color" name="bg" id="bg" value="#ffcc00">
+              <input type="color" list="color" name="bg" id="bg" value="#ffcc00">
+              <datalist id="color">
+                <option value="#ffc726" label="Жёлтый">
+                <option value="#000000" label="Чёрный">
+                <option value="#ffffff" label="Белый">
+                <option value="#ff00ae" label="Розовый">
+                <option value="#8e7c6e" label="Серый">
+              </datalist>
             </fieldset>
             <fieldset class="calculator__field size">
               <legend class="calculator__legend size__title">3. Площадь фасада</legend>
@@ -375,7 +383,7 @@
       <section class="structure">
         <div class="container">
           <h2 class="structure__title">
-            Устройство термопанели <span>евро - клинкер</span>
+            Устройство термопанели <span>ЕВРО КЛИНКЕР</span>
           </h2>
           <p class="structure__desc">
             При производстве термопанелей мы используем компоненты исключительного качества. К примеру, применение утеплителя «Пеноплэкс», обеспечивает высокие показатели по долговечности изделий и их теплоизолирующим характеристикам. Выбор бренда не случаен, поскольку утеплители других марок не гарантируют столь же безупречные параметры готовой продукции.</p>
@@ -385,8 +393,12 @@
             Такой подход к работе позволяет нам гарантировать соответствие продукции ожиданиям покупателей и поддерживать свою репутацию, как надежного поставщика термопанелей на российский рынок.
           </p>
           <div class="structure__pic">
-            <img class="structure__img structure__img--zoom" src="img/structure-card1.png" alt="Увеличенное изображение термопанели">
-            <img class="structure__img structure__img--main" src="img/structure-card2.png" alt="Основное изображение термопанели">
+            <p class="structure__pic-block1">
+              <img class="structure__img structure__img--zoom" src="img/structure-card1.png" alt="Увеличенное изображение термопанели">
+            </p>
+            <p class="structure__pic-block2">
+              <img class="structure__img structure__img--main" src="img/structure-card2.png" alt="Основное изображение термопанели">
+            </p>
           </div>
         </div>
       </section>
@@ -481,11 +493,45 @@
                 <li class="pay__item-features">Удобно</li>
                 <li class="pay__item-features">Быстро</li>
               </ul>
-              <button class="pay__button btn">
+              <a class="pay__button btn" href="contacts.html#advice">
                 Оплатить сейчас
-              </button>
+              </a>
             </div>
           </div>
+        </div>
+      </section>
+      
+      <section class="media">
+        <div class="container">
+          <h2 class="media__title">
+            Видео отзывы клиентов
+          </h2>
+          <ul class="media__list">
+            <li class="media__item">
+              <img class="media__preview media__preview--first" width="400" height="200" src="" alt="Превью картинка видео">
+              <h3 class="media__item-title">
+                Название видео
+              </h3>
+            </li>
+            <li class="media__item">
+              <img class="media__preview media__preview--second" width="400" height="200" src="" alt="Превью картинка видео">
+              <h3 class="media__item-title">
+                Название видео
+              </h3>
+            </li>
+            <li class="media__item">
+              <img class="media__preview media__preview--third" width="400" height="200" src="" alt="Превью картинка видео">
+              <h3 class="media__item-title">
+                Название видео
+              </h3>
+            </li>
+            <li class="media__item">
+              <img class="media__preview media__preview--fourth" width="400" height="200" src="" alt="Превью картинка видео">
+              <h3 class="media__item-title">
+                Название видео
+              </h3>
+            </li>
+          </ul>
         </div>
       </section>
       
@@ -523,40 +569,6 @@
           </ul>
         </div>
       </section>
-      
-      <section class="media">
-        <div class="container">
-          <h2 class="media__title">
-            Наше видео объектов
-          </h2>
-          <ul class="media__list">
-            <li class="media__item">
-              <img class="media__preview media__preview--first" width="400" height="200" src="" alt="Превью картинка видео">
-              <h3 class="media__item-title">
-                Название видео
-              </h3>
-            </li>
-            <li class="media__item">
-              <img class="media__preview media__preview--second" width="400" height="200" src="" alt="Превью картинка видео">
-              <h3 class="media__item-title">
-                Название видео
-              </h3>
-            </li>
-            <li class="media__item">
-              <img class="media__preview media__preview--third" width="400" height="200" src="" alt="Превью картинка видео">
-              <h3 class="media__item-title">
-                Название видео
-              </h3>
-            </li>
-            <li class="media__item">
-              <img class="media__preview media__preview--fourth" width="400" height="200" src="" alt="Превью картинка видео">
-              <h3 class="media__item-title">
-                Название видео
-              </h3>
-            </li>
-          </ul>
-        </div>
-      </section>
     </main>
      
     <footer class="page-footer" id="footer-contacts">
@@ -572,22 +584,18 @@
             <ul class="socials__list">
               <li class="socials__item">
                 <a href="" class="socials__item-link" aria-label="Переход на аккаунт компании в Фейсбук">
-                  <img class="socials__img" src="img/facebook.png" alt="Логотип Фейсбук">
                 </a>
               </li>
               <li class="socials__item">
                 <a href="" class="socials__item-link" aria-label="Переход на аккаунт компании в Вконтакте">
-                  <img class="socials__img" src="img/vk.png" alt="Логотип Вконтакте">
                 </a>
               </li>
               <li class="socials__item">
                 <a href="" class="socials__item-link" aria-label="Переход на аккаунт компании в Инстаграм">
-                  <img class="socials__img" src="img/instagram.png" alt="Логотип Инстаграм">
                 </a>
               </li>
               <li class="socials__item">
                 <a href="" class="socials__item-link" aria-label="Переход на аккаунт компании в Твиттер">
-                  <img class="socials__img" src="img/twitter.png" alt="Логотип Твиттер">
                 </a>
               </li>
             </ul>
@@ -657,28 +665,22 @@
             </p>
             <ul class="contacts__list">
               <li class="contacts__item">
-                <p class="contacts__item-title">Москва</p>
-                <span class="contacts__number">8(495)324-00-04</span>
+                <p class="contacts__item-title">Москва<span class="contacts__number">8(495)324-00-04</span></p>               
               </li>
               <li class="contacts__item">
-                <p class="contacts__item-title">Тула</p>
-                <span class="contacts__number">8(495)324-00-04</span>
+                <p class="contacts__item-title">Тула<span class="contacts__number">8(495)324-00-04</span></p>                
               </li>
               <li class="contacts__item">
-                <p class="contacts__item-title">Ростов-на-Дону</p>
-                <span class="contacts__number">8(863)310-01-02</span>
+                <p class="contacts__item-title">Ростов-на-Дону<span class="contacts__number">8(863)310-01-02</span></p>       
               </li>
               <li class="contacts__item">
-                <p class="contacts__item-title">Рязань</p>
-                <span class="contacts__number">8(495)324-00-04</span>
+                <p class="contacts__item-title">Рязань<span class="contacts__number">8(495)324-00-04</span></p>               
               </li>
               <li class="contacts__item">
-                <p class="contacts__item-title">Волгоград</p>
-                <span class="contacts__number">8(800)000-00-00</span>
+                <p class="contacts__item-title">Волгоград<span class="contacts__number">8(800)000-00-00</span></p>           
               </li>
               <li class="contacts__item">
-                <p class="contacts__item-title">Липецк</p>
-                <span class="contacts__number">8(800)000-00-00</span>
+                <p class="contacts__item-title">Липецк<span class="contacts__number">8(800)000-00-00</span></p>               
               </li>
             </ul>
           </div>
@@ -698,9 +700,11 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="js/picturefill.min.js"></script>
     <script src="slick/slick.js"></script>
+    <script src="js/sticky-header.js"></script>
     <script>
       var navMain = document.querySelector(".header-bottom");
       var navToggle = document.querySelector(".header-bottom__button");
+      var topInfo = document.querySelector('.header-top__contact');
 
       navMain.classList.remove("header-bottom--nojs");
 
@@ -708,9 +712,11 @@
         if (navMain.classList.contains("header-bottom--closed")) {
           navMain.classList.remove("header-bottom--closed");
           navMain.classList.add("header-bottom--opened");
+          topInfo.style.display = 'none';
         } else {
           navMain.classList.add("header-bottom--closed");
           navMain.classList.remove("header-bottom--opened");
+          topInfo.style.display = 'flex';
         }
       });
 
@@ -718,15 +724,27 @@
         arrows: false,
         dots: true,
         slidesToShow: 1,
-        slidesToScroll: 1
+        slidesToScroll: 1,
+        autoplay: true
       });
       $('.media__list').slick({
         arrows: false,
         dots: true,
-        slidesToShow: 2,
-        slidesToScroll: 1
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        autoplay: true
+      });
+      
+      $(window).scroll(function() {
+        if ($(this).scrollTop() > 1){
+          $('.header-bottom').addClass("sticky");
+        }
+        else{
+          $('.header-bottom').removeClass("sticky");
+        }
       });
     </script>
+    <script src="js/main.js"></script>
 
   </body>
 </html>

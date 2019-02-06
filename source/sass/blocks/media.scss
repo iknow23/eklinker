@@ -19,11 +19,16 @@
 }
 
 .media__item {
-  width: 400px !important;
+  width: 300px !important;
   height: 200px;
   margin-right: 80px;
-  margin-left: 80px;
+  margin-left: 55px;
   background-color: #acacac;
+}
+
+.media__item:hover {
+  border: 3px solid $main-color;
+  cursor: pointer;
 }
 
 @media (max-width: $tablet-width) {
