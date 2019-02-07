@@ -4,10 +4,14 @@
 }
 
 .bg-popular {
-	position: fixed;
+  position: fixed;
   top: 0;
   left: 0;
   z-index: -1;
+  
+  .container {
+	width: 100%;
+  }
 }
 
 .popular__title {
@@ -84,6 +88,47 @@
   color: $main-color !important;
 }
 
+@media (min-width: $desktop-width) {
+  .popular__img-wrapper {
+    position: relative;
+  }
+
+  .popular__hidden {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 5px;
+    opacity: 0;
+
+    a {
+      display: block;
+      width: 200px;
+      margin: 0 auto;
+      margin-top: 85px;
+      border: none;
+      color: $white;
+      background-color: transparent;
+      border-radius: 25px;
+      padding: 15px;
+      box-shadow: 0 0 10px 3px rgba(255, 255, 255, 0.5);
+    }
+  }
+
+  .popular__img-wrapper:hover .popular__hidden {
+    opacity: 1;
+    transition: 0.5s;
+  }
+}
+
+@media (max-width: $desktop-width) {
+  .popular__hidden a {
+	display: none;
+  }
+}
+
 @media (min-width: $tablet-width) and (max-width: $desktop-width) {
   .popular {
     min-height: 615px;
@@ -138,7 +183,7 @@
 	width: 270px !important;
     min-height: 350px;
     margin-bottom: 30px;
-    margin-left: 0;
+    margin-left: 5px;
     box-shadow: 3px 3px 10px 3px rgba(0, 0, 0, 0.3);
   }
   

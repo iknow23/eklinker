@@ -39,4 +39,10 @@
   .media__title {
 	margin-bottom: 70px;
   }
+  
+  .media .slick-dots {
+	width: 200px;
+    left: 50%;
+    margin-left: -100px;
+  }
 }

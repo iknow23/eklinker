@@ -75,6 +75,47 @@
   border: 1px solid $main-color;
 }
 
+@media (min-width: $desktop-width) {
+  .catalog__img-wrapper {
+    position: relative;
+  }
+
+  .catalog__hidden {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 5px;
+    opacity: 0;
+
+    a {
+      display: block;
+      width: 200px;
+      margin: 0 auto;
+      margin-top: 85px;
+      border: none;
+      color: $white;
+      background-color: transparent;
+      border-radius: 25px;
+      padding: 15px;
+      box-shadow: 0 0 10px 3px rgba(255, 255, 255, 0.5);
+    }
+  }
+
+  .catalog__img-wrapper:hover .catalog__hidden {
+    opacity: 1;
+    transition: 0.5s;
+  }
+}
+
+@media (max-width: $desktop-width) {
+  .catalog__hidden a {
+	display: none;
+  }
+}
+
 @media (min-width: $tablet-width) and (max-width: $desktop-width) {
   .catalog {
 	margin-bottom: 450px;
@@ -165,5 +206,9 @@
   
   .catalog__button {
     font-size: 14px;
+  }
+  
+  .catalog .price-symbol::after {
+	top: 3px;
   }
 }

@@ -25,6 +25,7 @@
 
 .header-bottom__button {
   display: none;
+  outline: none;
 }
 
 @media (min-width: $mobile-width) and (max-width: $desktop-width) {
@@ -116,7 +117,9 @@
   }
   
   .header-bottom {
+    position: static;
     min-height: 0;
+    width: auto;
   }
   
   .header-bottom__button {
@@ -130,7 +133,7 @@
   }
 
   .header-bottom--closed .header-bottom__button {
-    top: -115px;
+    top: 0;
     margin-left: 85px;
   }
   
@@ -143,7 +146,7 @@
   }
   
   .header-bottom--opened .header-bottom__button {
-    top: -30px;
+    top: 15px;
     left: 50%;
     margin-left: 25px;
   }
@@ -155,7 +158,7 @@
   }
   
   .header-bottom--opened .main-nav__list {
-	top: -45px;
+	top: 0;
     left: 0;
     right: 0;
   }

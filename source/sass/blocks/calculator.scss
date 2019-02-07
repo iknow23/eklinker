@@ -97,6 +97,10 @@
   cursor: pointer;
 }
 
+.calculator select:hover {
+  cursor: pointer;
+}
+
 @media (min-width: $tablet-width) and (max-width: $desktop-width) {
   .calculator__desc {
     width: 280px;

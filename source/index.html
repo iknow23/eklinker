@@ -226,7 +226,12 @@
           </h2>
           <ul class="catalog__list">
             <li class="catalog__item">
-              <img class="catalog__img" src="img/catalog-card1.jpg" alt="Изображение фасадной термопанели с клинкерной плиткой">
+              <div class="catalog__img-wrapper">
+                <img class="catalog__img" src="img/catalog-card1.jpg" alt="Изображение фасадной термопанели с клинкерной плиткой">
+                <div class="catalog__hidden">
+                  <a href="catalog.html">Перейти в коллекцию</a>
+                </div>
+              </div>
               <div class="catalog__desc-block">
                 <h3 class="catalog__item-tile">Фасадные термопанели с клинкерной плиткой</h3>
                 <p class="catalog__desc">Текст/описание/скидки/бонусы</p>
@@ -235,7 +240,12 @@
               </div>
             </li>
             <li class="catalog__item">
-              <img class="catalog__img" src="img/catalog-card2.jpg" alt="Изображение фасадной термопанели под состаренный кирпич">
+              <div class="catalog__img-wrapper">
+                <img class="catalog__img" src="img/catalog-card2.jpg" alt="Изображение фасадной термопанели под состаренный кирпич">
+                <div class="catalog__hidden">
+                  <a href="catalog.html">Перейти в коллекцию</a>
+                </div>
+              </div>
               <div class="catalog__desc-block">
                 <h3 class="catalog__item-tile">Фасадные термопанели под состаренный кирпич</h3>
                 <p class="catalog__desc">Текст/описание/скидки/бонусы</p>
@@ -244,7 +254,12 @@
               </div>
             </li>
             <li class="catalog__item">
-              <img class="catalog__img" src="img/catalog-card3.jpg" alt="Изображение термопанели для отделки цоколя">
+              <div class="catalog__img-wrapper">
+                <img class="catalog__img" src="img/catalog-card3.jpg" alt="Изображение термопанели для отделки цоколя">
+                <div class="catalog__hidden">
+                  <a href="catalog.html">Перейти в коллекцию</a>
+                </div>
+              </div>
               <div class="catalog__desc-block">
                 <h3 class="catalog__item-tile">Фасадные термопанели с клинкерной плиткой</h3>
                 <p class="catalog__desc">Текст/описание/скидки/бонусы</p>
@@ -263,8 +278,13 @@
           </h2>
           <ul class="related-product__list">
             <li class="related-product__item">
-              <p class="related-product__hit hit">Хит</p>
-              <img class="related-product__img" src="img/related-card1.jpg" alt="Изображение фасадного декора">
+              <div class="related-product__img-wrapper">
+                <p class="related-product__hit hit">Хит</p>
+                <img class="related-product__img" src="img/related-card1.jpg" alt="Изображение фасадного декора">
+                <div class="related-product__hidden">
+                  <a href="catalog.html">Перейти в коллекцию</a>
+                </div>
+              </div>
               <div class="related-product__desc-block">
                 <h3 class="related-product__item-tile">Фасадный декор</h3>
                 <p class="related-product__desc">Текст/описание/скидки/бонусы</p>
@@ -273,7 +293,12 @@
               </div>
             </li>
             <li class="related-product__item">
-              <img class="related-product__img" src="img/related-card2.jpg" alt="Изображение фасадного декора">
+              <div class="related-product__img-wrapper">
+                <img class="related-product__img" src="img/related-card2.jpg" alt="Изображение фасадного декора">
+                <div class="related-product__hidden">
+                  <a href="catalog.html">Перейти в коллекцию</a>
+                </div>
+              </div>
               <div class="related-product__desc-block">
                 <h3 class="related-product__item-tile">Фасадный декор</h3>
                 <p class="related-product__desc">Текст/описание/скидки/бонусы</p>
@@ -282,7 +307,12 @@
               </div>
             </li>
             <li class="related-product__item">
-              <img class="related-product__img" src="img/related-card3.jpg" alt="Изображение фасадного декора">
+              <div class="related-product__img-wrapper">
+                <img class="related-product__img" src="img/related-card3.jpg" alt="Изображение фасадного декора">
+                <div class="related-product__hidden">
+                  <a href="catalog.html">Перейти в коллекцию</a>
+                </div>
+              </div>
               <div class="related-product__desc-block">
                 <h3 class="related-product__item-tile">Фасадный декор</h3>
                 <p class="related-product__desc">Текст/описание/скидки/бонусы</p>
@@ -321,6 +351,7 @@
             </fieldset>
             <fieldset class="calculator__field color">
               <legend class="calculator__legend color__title">2. Выберите цвет термопанели:</legend>
+<!--
               <label class="calculator__label" for="bg">Цвет</label>
               <input type="color" list="color" name="bg" id="bg" value="#ffcc00">
               <datalist id="color">
@@ -330,6 +361,12 @@
                 <option value="#ff00ae" label="Розовый">
                 <option value="#8e7c6e" label="Серый">
               </datalist>
+-->
+              <select>
+                <option name="Светлый тон">Светлый тон</option>
+                <option name="Тёмный тон">Тёмный тон</option>
+                <option name="Баварская раскладка">Баварская раскладка</option>
+              </select>
             </fieldset>
             <fieldset class="calculator__field size">
               <legend class="calculator__legend size__title">3. Площадь фасада</legend>
@@ -732,7 +769,29 @@
         dots: true,
         slidesToShow: 3,
         slidesToScroll: 1,
-        autoplay: true
+        autoplay: true,
+        responsive: [
+          {
+            breakpoint: 1230,
+            settings: {
+              slidesToShow: 3,
+              slidesToScroll: 1,
+              dots: true,
+              autoplay: true
+            }
+          },
+          {
+            breakpoint: 760,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1,
+              autoplay: true
+            }
+          }
+          // You can unslick at a given breakpoint now by adding:
+          // settings: "unslick"
+          // instead of a settings object
+        ]
       });
       
       $(window).scroll(function() {

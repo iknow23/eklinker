@@ -17,7 +17,9 @@
   </head>
   <body>
     <div class="bg-popular">
-      <img src="img/bg-main1.jpg" alt="">
+      <div class="container">
+        <img src="img/bg-main1.jpg" alt="">
+      </div>
     </div>
   
     <header class="page-header">
@@ -59,7 +61,7 @@
             <ul class="main-nav__list menu css-transform">
             <div class="container">
               <li class="main-nav__item menu-item">
-                <a class="main-nav__link">Главная</a>
+                <a class="main-nav__link" href="index.html">Главная</a>
               </li>
               <li class="main-nav__item menu-item">
                 <a class="main-nav__link" href="#">О компании</a>
@@ -220,8 +222,13 @@
           </h2>
           <ul class="popular__list">
             <li class="popular__item">
-              <p class="popular__hit hit">Хит</p>
-              <img class="popular__img" src="img/popular-card1.png" alt="Изображение фасадной клинкерной термопанели">
+              <div class="popular__img-wrapper">
+                <p class="popular__hit hit">Хит</p>
+                <img class="popular__img" src="img/popular-card1.png" alt="Изображение фасадной клинкерной термопанели">
+                <div class="popular__hidden">
+                  <a href="catalog.html">Перейти в коллекцию</a>
+                </div>
+              </div>
               <div class="popular__desc-block">
                 <h3 class="popular__item-tile">Фасадная клинкерная термопанель Cerrad, крем Gladka</h3>
                 <p class="popular__price">1001 <b class="price-symbol"><span class="visually-hidden">р</span></b> </p>
@@ -229,7 +236,12 @@
               </div>
             </li>
             <li class="popular__item">
-              <img class="popular__img" src="img/popular-card2.png" alt="Изображение фасадной клинкерной термопанели">
+              <div class="popular__img-wrapper">
+                <img class="popular__img" src="img/popular-card2.png" alt="Изображение фасадной клинкерной термопанели">
+                <div class="popular__hidden">
+                  <a href="catalog.html">Перейти в коллекцию</a>
+                </div>
+              </div>
               <div class="popular__desc-block">
                 <h3 class="popular__item-tile">Фасадная клинкерная термопанель Cerrad, крем Gladka</h3>
                 <p class="popular__price">1001 <b class="price-symbol"><span class="visually-hidden">р</span></b> </p>
@@ -237,7 +249,12 @@
               </div>
             </li>
             <li class="popular__item">
-              <img class="popular__img" src="img/popular-card3.png" alt="Изображение фасадной клинкерной термопанели">
+              <div class="popular__img-wrapper">
+                <img class="popular__img" src="img/popular-card3.png" alt="Изображение фасадной клинкерной термопанели">
+                <div class="popular__hidden">
+                  <a href="catalog.html">Перейти в коллекцию</a>
+                </div>
+              </div>
               <div class="popular__desc-block">
                 <h3 class="popular__item-tile">Фасадная клинкерная термопанель Cerrad, крем Gladka</h3>
                 <p class="popular__price">1001 <b class="price-symbol"><span class="visually-hidden">р</span></b> </p>
@@ -245,7 +262,12 @@
               </div>
             </li>
             <li class="popular__item">
-              <img class="popular__img" src="img/popular-card1.png" alt="Изображение фасадной клинкерной термопанели">
+              <div class="popular__img-wrapper">
+                <img class="popular__img" src="img/popular-card1.png" alt="Изображение фасадной клинкерной термопанели">
+                <div class="popular__hidden">
+                  <a href="catalog.html">Перейти в коллекцию</a>
+                </div>
+              </div>
               <div class="popular__desc-block">
                 <h3 class="popular__item-tile">Фасадная клинкерная термопанель Cerrad, крем Gladka</h3>
                 <p class="popular__price">1001 <b class="price-symbol"><span class="visually-hidden">р</span></b> </p>
@@ -253,7 +275,12 @@
               </div>
             </li>
             <li class="popular__item">
-              <img class="popular__img" src="img/popular-card2.png" alt="Изображение фасадной клинкерной термопанели">
+              <div class="popular__img-wrapper">
+                <img class="popular__img" src="img/popular-card2.png" alt="Изображение фасадной клинкерной термопанели">
+                <div class="popular__hidden">
+                  <a href="catalog.html">Перейти в коллекцию</a>
+                </div>
+              </div>
               <div class="popular__desc-block">
                 <h3 class="popular__item-tile">Фасадная клинкерная термопанель Cerrad, крем Gladka</h3>
                 <p class="popular__price">1001 <b class="price-symbol"><span class="visually-hidden">р</span></b> </p>
@@ -291,6 +318,7 @@
             </fieldset>
             <fieldset class="calculator__field color">
               <legend class="calculator__legend color__title">2. Выберите цвет термопанели:</legend>
+<!--
               <label class="calculator__label" for="bg">Цвет</label>
               <input type="color" list="color" name="bg" id="bg" value="#ffcc00">
               <datalist id="color">
@@ -300,6 +328,12 @@
                 <option value="#ff00ae" label="Розовый">
                 <option value="#8e7c6e" label="Серый">
               </datalist>
+-->
+              <select>
+                <option name="Светлый тон">Светлый тон</option>
+                <option name="Тёмный тон">Тёмный тон</option>
+                <option name="Баварская раскладка">Баварская раскладка</option>
+              </select>
             </fieldset>
             <fieldset class="calculator__field size">
               <legend class="calculator__legend size__title">3. Площадь фасада</legend>
@@ -386,7 +420,7 @@
             </p>
             <ul class="page-footer__nav-list">
               <li class="page-footer__nav-itemt">
-                <a class="page-footer__nav-link">Главная</a>
+                <a class="page-footer__nav-link" href="index.html">Главная</a>
               </li>
               <li class="page-footer__nav-item">
                 <a class="page-footer__nav-link" href="#">О компании</a>

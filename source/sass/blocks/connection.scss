@@ -412,6 +412,10 @@
 }
 
 @media (max-width: $tablet-width) {
+  .page-contacts {
+	margin-top: -15px !important;
+  }
+  
   .connection__title {
     padding-left: 0;
   }
