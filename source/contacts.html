@@ -612,8 +612,12 @@
       var navMain = document.querySelector(".header-bottom");
       var navToggle = document.querySelector(".header-bottom__button");
       var topInfo = document.querySelector('.header-top__contact');
+      var officeList = document.querySelector('.connection__add-list');
+      var connectionAdress = document.querySelector('.connection__adress-desc');
 
       navMain.classList.remove("header-bottom--nojs");
+      officeList.classList.add("connection__add-remove");
+      connectionAdress.innerHTML = '.';
 
       navToggle.addEventListener("click", function() {
         if (navMain.classList.contains("header-bottom--closed")) {
