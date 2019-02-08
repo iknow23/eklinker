@@ -93,8 +93,9 @@
 }
 
 .connection__add ul {
-  @include reset-list;
-  
+  margin: 0;
+  padding: 0;
+
   a {
     color: $white;
   }
@@ -453,6 +454,12 @@
     height: 105px;
     overflow: scroll;
   }
+  
+  .connection__add ul.menu li:nth-child(2) .submenu {
+    margin: 0;
+    padding: 0;
+    padding-left: 15px !important;
+  }
 }
 
 @media (max-width: $tablet-width) {
@@ -530,11 +537,17 @@
   }
   
   .connection .menu a {
-    width: 190px;
+    width: 180px;
   }
   
   .submenu {
 	height: 110px;
     overflow: scroll;
+  }
+  
+  .connection__add ul.menu li:nth-child(2) .submenu {
+    margin: 0;
+    padding: 0;
+    padding-left: 15px !important;
   }
 }
