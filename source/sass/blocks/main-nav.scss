@@ -27,13 +27,14 @@
 
 .main-nav__link:hover,
 .main-nav__link:focus {
-  background-color: #727272 !important;
-  color: $main-color !important;
+  background-color: #727272;
+  color: $main-color;
 }
 
 .main-nav__link--current {
   font-weight: 700;
   color: $main-color;
+  background-color: #727272;
 }
 
 .main-nav__link--current:hover,
