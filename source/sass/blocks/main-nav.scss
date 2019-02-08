@@ -27,8 +27,8 @@
 
 .main-nav__link:hover,
 .main-nav__link:focus {
-  background-color: #727272;
-  color: $main-color;
+  background-color: #727272 !important;
+  color: $main-color !important;
 }
 
 .main-nav__link--current {
