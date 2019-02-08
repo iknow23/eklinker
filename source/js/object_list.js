@@ -4,8 +4,8 @@ function init() {
 
     // Создание экземпляра карты.
     var myMap = new ymaps.Map('map', {
-            center: [55.79289181, 49.11301626],
-            zoom: 15
+            center: [55.74392465, 37.64200572],
+            zoom: 10
         }, {
             searchControlProvider: 'yandex#search'
         });
@@ -63,7 +63,10 @@ function init() {
               iconImageOffset: [-22, -22]
             });
       
-            var placemark = new ymaps.Placemark(item.center, { balloonContent: item.name });
+            var placemark = new ymaps.Placemark(item.center, {
+              balloonContent: item.name,
+              balloonContentFooter: item.desc
+            });
       
             myPin.add(placemark);
 
@@ -84,12 +87,7 @@ function init() {
             });
     }
 
-//    // Добавляем меню в тэг BODY.
-//    menu.appendTo($('body'));
-//    // Выставляем масштаб карты чтобы были видны все группы.
-//    myMap.setBounds(myMap.geoObjects.getBounds());
-  
-    // Добавляем меню в тэг BODY.
+    // Добавляем меню в connection.
     menu.appendTo($('.connection__add'));
     // Выставляем масштаб карты чтобы были видны все группы.
     myMap.setBounds(myMap.geoObjects.getBounds());
