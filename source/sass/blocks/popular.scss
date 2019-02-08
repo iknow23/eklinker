@@ -5,12 +5,13 @@
 
 .bg-popular {
   position: fixed;
-  top: 0;
+  top: -75px;
   left: 0;
   z-index: -1;
   
   .container {
 	width: 100%;
+    padding: 0;
   }
 }
 
