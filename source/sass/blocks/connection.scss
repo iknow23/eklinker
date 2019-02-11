@@ -178,7 +178,7 @@
   left: -35px;
 
   display: block;
-  width: 25px;
+  width: 28px;
   height: 25px;
   
   background-repeat: no-repeat;
@@ -190,11 +190,11 @@
 }
 
 .connection__adress::before {
-  background-image: url('../img/footer-adress.png');
+  background-image: url('../img/connection-home.png');
 }
 
 .connection__add::before {
-  background-image: url('../img/footer-adress2.png');
+  background-image: url('../img/connection-home2.png');
 }
 
 .connection__tel::before {
@@ -318,6 +318,33 @@
 
 .connection__area--moscow li a:hover {
   color: $main-color;
+}
+
+.menu > li:last-of-type ul.submenu > li {
+  position: relative;
+}
+
+.menu ul.submenu {
+  list-style: none;
+}
+
+.menu > li:first-of-type ul.submenu > li::before,
+.menu > li:last-of-type ul.submenu > li::before {
+  content: '';
+  
+  position: absolute;
+  top: 3px;
+  left: -13px;
+
+  width: 10px;
+  height: 15px;
+  
+  background-image: url('../img/footer-adress-small.png');
+  background-repeat: no-repeat;
+}
+
+.menu > li:first-of-type ul.submenu > li::before {
+  top: -115px;
 }
 
 
@@ -460,6 +487,10 @@
     padding: 0;
     padding-left: 15px !important;
   }
+  
+  .menu > li:first-of-type ul.submenu > li::before {
+    top: -58px;
+  }
 }
 
 @media (max-width: $tablet-width) {
@@ -549,5 +580,9 @@
     margin: 0;
     padding: 0;
     padding-left: 15px !important;
+  }
+  
+  .menu > li:first-of-type ul.submenu > li::before {
+    top: -198px;
   }
 }
