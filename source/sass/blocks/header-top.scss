@@ -133,3 +133,15 @@
     display: none !important;
   }
 }
+
+@media (min-width: 650px) and (max-width: $tablet-width) {
+  .header-top__basket::after {
+    left: 95px;
+  }
+}
+
+@media (max-width: $tablet-width) and (orientation: landscape) {
+  .header-top__basket::after {
+    left: 70px;
+  }
+}

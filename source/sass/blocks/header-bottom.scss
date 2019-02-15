@@ -163,3 +163,26 @@
     right: 0;
   }
 }
+
+@media (min-width: 650px) and (max-width: $tablet-width) {
+  .header-bottom--closed .header-bottom__button {
+    margin-left: 215px;
+  }
+  
+  .header-bottom--opened .header-bottom__button {
+    margin-left: 190px;
+    top: 10px;
+  }
+}
+
+@media (max-width: $tablet-width) and (orientation: landscape) {
+  .header-bottom--closed .header-bottom__button {
+    right: 100%;
+    margin-left: 220px;
+  }
+  
+  .header-bottom--opened .header-bottom__button {
+    right: 100%;
+    margin-left: 200px;
+  }
+}

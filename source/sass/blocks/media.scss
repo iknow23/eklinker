@@ -23,11 +23,13 @@
   height: 200px;
   margin-right: 80px;
   margin-left: 55px;
+  padding: 3px;
   background-color: #acacac;
 }
 
 .media__item:hover {
   border: 3px solid $main-color;
+  padding: 0;
   cursor: pointer;
 }
 

@@ -88,3 +88,17 @@
 	display: none;
   }
 }
+
+@media (min-width: 650px) and (max-width: $tablet-width) {
+  .structure {
+    min-height: 1500px;
+	background-position: center 425px, center;
+  }
+}
+
+@media (max-width: $tablet-width) and (orientation: landscape) {
+  .structure {
+	min-height: 1530px;
+    background-position: center 445px, center;
+  }
+}

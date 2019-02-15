@@ -27,8 +27,9 @@
 }
 
 .services__item:hover {
-  margin-bottom: 24px;
+  margin-bottom: 30px;
   border: 3px solid $main-color;
+  padding: 27px 97px;
   transition: all .3s;
   transform: scale(1.035);
   cursor: pointer;
@@ -145,6 +146,8 @@
     width: auto;
     padding: 0;
     padding-top: 220px;
+    padding-left: 3px;
+    padding-right: 3px;
     text-align: center;
     box-shadow: none;
     
@@ -164,6 +167,12 @@
       left: 50%;
       margin-left: -125px;
     }
+  }
+  
+  .services__item:hover {
+    margin-bottom: 25px;
+    padding-left: 0;
+    padding-right: 0;
   }
   
   .services__item::after {

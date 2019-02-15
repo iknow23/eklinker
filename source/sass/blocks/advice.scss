@@ -114,3 +114,31 @@
     margin-bottom: 15px;
   }
 }
+
+@media (min-width: 650px) and (max-width: $tablet-width) {
+  .advice__form {
+	width: 570px;
+  }
+  
+  .advice__field, .advice__footer {
+    flex-direction: row;
+  }
+  
+  .advice__desc {
+    order: 2;
+  }
+}
+
+@media (max-width: $tablet-width) and (orientation: landscape) {
+  .advice__form {
+	width: 550px;
+  }
+  
+  .advice__field, .advice__footer {
+    flex-direction: row;
+  }
+  
+  .advice__desc {
+    order: 2;
+  }
+}

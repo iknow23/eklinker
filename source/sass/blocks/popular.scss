@@ -209,4 +209,30 @@
   .popular__button {
     font-size: 14px;
   }
+  
+  .bg-popular {
+	top: -50px;
+    
+    img {
+      height: 550px;
+    }
+  }
+}
+
+@media (min-width: 650px) and (max-width: $tablet-width) {
+  .popular__list {
+    width: 570px;
+  }
+}
+
+@media (max-width: $tablet-width) and (orientation: landscape) {
+  .popular__list {
+    width: 560px;
+    margin: 0 auto;
+  }
+  
+  .popular__item {
+	width: 330px!important;
+    margin-left: 100px;
+  }
 }

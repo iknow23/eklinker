@@ -574,6 +574,8 @@
   .submenu {
 	height: 110px;
     overflow: scroll;
+    overflow-y: auto;
+	-webkit-overflow-scrolling:touch;
   }
   
   .connection__add ul.menu li:nth-child(2) .submenu {
@@ -584,5 +586,19 @@
   
   .menu > li:first-of-type ul.submenu > li::before {
     top: -198px;
+  }
+}
+
+@media (min-width: 650px) and (max-width: $tablet-width) {
+  .connection__title {
+    padding-top: 15px;
+  }
+  
+  .menu>li:first-of-type ul.submenu>li::before {
+    top: -60px;
+  }
+  
+  .connection__area {
+    width: 585px;
   }
 }

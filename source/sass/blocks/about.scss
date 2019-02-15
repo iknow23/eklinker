@@ -144,3 +144,13 @@
     height: auto;
   }
 }
+
+@media (max-width: $tablet-width) and (orientation: landscape) {
+  .about__desc-bottom {
+    margin-bottom: 20px;
+  }
+  
+  .about__list {
+    margin: 0 auto;
+  }
+}

@@ -164,3 +164,21 @@
     width: auto;
   }
 }
+
+@media (max-width: $tablet-width) and (orientation: landscape) {
+  .pay__wrapper {
+	align-items: flex-start;
+  }
+  
+  .pay__title {
+	width: 405px;
+  }
+  
+  .pay__footer, .pay__list-img {
+    margin-left: 25%;
+  }
+  
+  .pay__footer {
+    padding-left: 25px;
+  }
+}

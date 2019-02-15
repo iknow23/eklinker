@@ -57,3 +57,19 @@ textarea.contact-calc__input {
     text-align: center;
   }
 }
+
+@media (min-width: 650px) and (max-width: $tablet-width) {
+  .contact-calc__group {
+    width: 520px;
+  }
+  
+  .contact-calc__input {
+    width: 100%;
+  }
+}
+
+@media (max-width: $tablet-width) and (orientation: landscape) {
+  .contact-calc__group {
+    max-width: 415px;
+  }
+}

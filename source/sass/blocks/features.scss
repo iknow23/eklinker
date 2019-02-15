@@ -126,3 +126,15 @@
     margin-left: -58px;
   }
 }
+
+@media (min-width: 650px) and (max-width: $tablet-width) {
+  .features__list {
+    justify-content: space-around;
+  }
+}
+
+@media (max-width: $tablet-width) and (orientation: landscape) {
+  .features__list {
+    justify-content: space-around;
+  }
+}

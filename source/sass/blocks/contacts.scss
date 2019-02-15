@@ -104,3 +104,13 @@
 	width: 280px;
   }
 }
+
+@media (max-width: $tablet-width) and (orientation: landscape) {
+  .contacts {
+	width: 500px;
+  }
+  
+  .contacts__item {
+    width: 165px;
+  }
+}

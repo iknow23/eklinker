@@ -142,6 +142,7 @@
 }
 
 .slider__button-buy:hover {
+  margin-bottom: 18px;
   color: $main-color;
   border: 1px solid $main-color;
   background-color: transparent;
@@ -198,5 +199,21 @@
   
   .slider__controls {
     display: none;
+  }
+}
+
+@media (min-width: 650px) and (max-width: $tablet-width) {
+  .slider__button-learn {
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: $tablet-width) and (orientation: landscape) {
+  .slider__buttons {
+    align-items: center;
+  }
+  
+  .slider__button-learn {
+    margin-bottom: 20px;
   }
 }

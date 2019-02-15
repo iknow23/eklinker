@@ -376,3 +376,99 @@
 	font-size: 17px;
   }
 }
+
+@media (min-width: 650px) and (max-width: $tablet-width) {
+  .card__title {
+	padding-top: 25px;
+    margin-bottom: 50px;
+  }
+  
+  .card__img-wrapper, .card__show-wrapper {
+    width: 565px;
+  }
+  
+  .card__img-wrapper {
+	display: flex;
+    justify-content: space-around;
+  }
+  
+  .card__item-preview {
+    width: 152px !important;
+  }
+  
+  .card__table {
+	width: 500px;
+  }
+  
+  .card__pay-wrapper {
+    width: 500px;
+    margin: 0 auto;
+	margin-top: 115px;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    align-items: center;
+  }
+  
+  .card__pay-wrapper-left {
+    width: 190px;
+    margin-bottom: 0;
+  }
+  
+  .card__td-desc {
+    width: 665px;
+  }
+  
+  .card__price-number::after {
+    left: 120px;
+  }
+  
+  .card__button {
+	width: 225px;
+  }
+}
+
+@media (max-width: $tablet-width) and (orientation: landscape) {
+  .card {
+    padding-bottom: 0;
+  }
+  
+  .card__img-wrapper, .card__show-wrapper {
+    width: 520px;
+  }
+  
+  .card__item-preview {
+    width: 170px!important;
+  }
+  
+  .card__table {
+    width: 400px;
+    display: block;
+    padding-left: 20px;
+  }
+  
+  .card__td-desc {
+    width: 520px;
+    top: 800px;
+    padding-left: 20px;
+  }
+  
+  .card__pay-wrapper {
+    margin-top: 150px;
+    margin-bottom: 30px;
+  }
+  
+  .card__pay-wrapper-left {
+	display: flex;
+    justify-content: space-around;
+  }
+  
+  .card__price-number::after {
+    left: 105px;
+  }
+  
+  .card__button {
+    width: auto;
+    margin: 0 auto;
+  }
+}

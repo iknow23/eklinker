@@ -34,7 +34,7 @@
 .calculator__img {
   position: absolute;
   right: 30%;
-  top: 280px;
+  top: 200px;
 }
 
 .calculator__form {
@@ -119,8 +119,9 @@
   }
 
   .calculator__img {
-    top: 175px;
-    right: 43%;
+    width: 165px;
+    top: 165px;
+    right: 50%;
     margin-right: -250px;
   }
   
@@ -155,5 +156,23 @@
   
   .calculator__legend {
     font-size: 13px;
+  }
+}
+
+@media (min-width: 650px) and (max-width: $tablet-width) {
+  .calculator__footer {
+    width: 520px;
+  }
+}
+
+@media (max-width: $tablet-width) and (orientation: landscape) {
+  .calculator__form {
+	width: 500px;
+    margin: 0 auto;
+    padding-left: 35px;
+  }
+  
+  .calculator__footer {
+    width: 415px;
   }
 }
