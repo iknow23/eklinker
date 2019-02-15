@@ -141,7 +141,7 @@
                   <img class="card__img-preview" src="img/catalog-preview3.png" width="200" height="153" alt="Превью термопанели">
                 </li>
                 <li class="card__item-preview">
-                  <img class="card__img-preview" src="img/catalog-preview1.png" width="200" height="153" alt="Превью термопанели">
+                  <img class="card__img-preview" src="img/catalog-preview4.png" width="200" height="153" alt="Превью термопанели">
                 </li>
               </ul>
             </div>
@@ -510,6 +510,41 @@
           topInfo.style.display = 'flex';
         }
       });
+      
+      
+      
+      
+      
+      var mainCard = document.querySelector('.card__img');
+      
+      
+      var photos = [
+        'img/catalog-preview1.png',
+        'img/catalog-preview2.png',
+        'img/catalog-preview3.png',
+        'img/catalog-preview4.png'
+      ];
+      
+      var thumbnails = document.querySelectorAll('.card__item-preview');
+      var fullPhoto = document.querySelector('.card__img');
+      var addThumbnailClickHandler = function (thumbnail, photo) {
+        thumbnail.addEventListener('click', function () {
+          fullPhoto.src = photo;
+        });
+      };
+      
+      for (var i = 0; i < thumbnails.length; i++) {
+        addThumbnailClickHandler(thumbnails[i], photos[i]);
+      }
+
+      
+      
+      
+      
+      
+      
+      
+      
       
       $('.card__list-preview').slick({
         dots: true,
