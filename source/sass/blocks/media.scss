@@ -31,6 +31,16 @@
   cursor: pointer;
 }
 
+@media (min-width: $tablet-width) and (max-width: $desktop-width) {
+  .media__item {
+    width: 200px !important;
+    height: 200px;
+    margin-right: 43px;
+    margin-left: 43px;
+    background-color: #acacac;
+  }
+}
+
 @media (max-width: $tablet-width) {
   .media {
     padding-bottom: 30px;
@@ -44,5 +54,11 @@
 	width: 200px;
     left: 50%;
     margin-left: -100px;
+  }
+  
+  .media__item {
+    width: 100% !important;
+    margin-right: 0;
+    margin-left: 0;
   }
 }
